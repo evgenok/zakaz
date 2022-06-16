@@ -72,6 +72,9 @@ body {
    letter-spacing: 0.6px;
    padding: 0;
    margin: 0;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
 }
 
 main {
@@ -96,4 +99,25 @@ main {
    font-family: "Quicksand", sans-serif;
    font-size: 16px;
    font-weight: 500;
+}
+.call__btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   background: #166966;
+   cursor: pointer;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   box-shadow: 0px 0px 12px 3px rgba(214, 109, 4, 0.44);
+   &:hover {
+      background: #fff;
+      transition: all 0.3s linear;
+   }
+   svg {
+      path {
+         fill: rgb(214, 109, 4);
+      }
+   }
 }
