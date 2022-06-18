@@ -1,0 +1,72 @@
+@import "fonts";
+@import "global";
+@import "vars";
+
+
+.about__content{
+    width: 70%;
+    height: 100vh;
+}
+.about__inner{
+    background-color: #f6f8fa;
+}
+.bg-3{
+    background-color: #f6f8fa;
+    padding: 70px 0;
+}
+.bg-4{
+    padding: 70px 0;
+}
+.about__title{
+    font-size: 56px;
+    line-height: 64px;
+    font-family: "Quicksand", sans-serif;
+   font-weight: 700;
+   
+   color: $title;
+   margin-bottom: 30px;
+}
+.about__item-title{
+    font-size: 140px;
+    margin-top: 90px;
+    margin-bottom: 70px;
+    font-family: "Quicksand", sans-serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: $title;
+   
+}
+.about__item-text{
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    color: $suptitle;
+}
+.about__content-text{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: $text;
+}
+.about__bg-1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.about__item-content{
+    margin-left: 30px;
+}
+.about__item{
+    margin-top: 80px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.about__bg-2{
+    height: 80%;
+    margin-bottom: 10px;
+}
