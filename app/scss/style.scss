@@ -1,0 +1,129 @@
+@import "fonts";
+@import "global";
+@import "libs";
+@import "vars";
+
+//
+
+.header {
+   height: 65px;
+   background-color: #94c3d2;
+   padding: 10px;
+}
+.menu {
+   display: flex;
+   justify-content: space-between;
+}
+.logo {
+   text-align: center;
+   width: 200px;
+   color: $title;
+   text-transform: uppercase;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 24px;
+}
+.menu__list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.menu__list-item + .menu__list-item {
+   margin-left: 10px;
+}
+.menu__list-link {
+   color: $title;
+   text-transform: uppercase;
+   font-size: 15px;
+   font-weight: 500;
+   position: relative;
+   &:hover {
+      color: $suptitle;
+      transition: all 0.3s linear;
+   }
+}
+.menu__contacts {
+   width: 200px;
+   font-family: "Raleway", sans-serif;
+   font-size: 15px;
+   font-weight: 500;
+}
+.menu__contacts-tel {
+   margin-bottom: 5px;
+}
+.menu__contacts-tel,
+.menu__contacts-email {
+   color: $title;
+   &:hover {
+      text-decoration: underline;
+      transition: all 0.3s linear;
+      color: $suptitle;
+   }
+}
+
+.footer {
+   background-color: $bg;
+   padding: 30px 50px;
+}
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer__box {
+   display: flex;
+   justify-content: space-between;
+}
+.footer__item {
+   margin-right: 30px;
+}
+.footer__item + .footer__item {
+   border-left: 1px solid $suptitle;
+   padding-left: 30px;
+}
+.footer__item-title {
+   font-size: 18px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.footer__list-item {
+   margin-bottom: 5px;
+}
+.footer__list-link {
+   color: $title;
+   &:hover {
+      color: $suptitle;
+      text-decoration: underline;
+      transition: all 0.3s ease;
+   }
+}
+.footer__item-social {
+   .footer__item-title {
+      text-align: center;
+      font-size: 20px;
+   }
+}
+.footer__social-box {
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: space-around;
+}
+.footer__social-btn {
+   border: none;
+   background-color: $suptitle;
+   border-radius: 15px;
+   padding: 15px;
+   font-size: 22px;
+   font-weight: 500;
+   color: rgb(214, 109, 4);
+   cursor: pointer;
+   &:hover {
+      background-color: #fff;
+      transition: all 0.3s ease;
+      top: 2px;
+   }
+}
+
+//
+
+@import "media";
