@@ -116,12 +116,32 @@
                         <img src="images/icons/inst.svg" alt="" class="footer__social-img">
                      </a>
                   </div>
-                  <button class="footer__social-btn" onclick="openForm()">Оставить заявку</button>
+                  <button class="footer__social-btn">Оставить заявку</button>
                </div>
             </div>
          </div>
       </footer>
-
+      <section class="form form-content" id="form">
+         <form class="form__body" method="post" onsubmit="send(event, 'send.php')" >
+           <h1 class="form__title">Остались вопросы?<br>Оставьте заявку и мы свяжемся с вами.</h1>
+           <div class="form__item">
+             <input placeholder="Имя:" class="form__input _req" id="formName" type="text" name="name"  >
+           </div>
+           <div class="form__item">
+             <input placeholder="Телефон:" class="form__input _req _email" id="formEmail" type="text" name="email"  >
+           </div>
+            <div class="form__item">
+               <textarea placeholder="Сообщение:" class="form__input" name="" id="" ></textarea>
+           </div>
+           <div class="form__item">
+             <div class="checkbox">
+               <input class="checkbox__input _req" checked id="formAgreement" type="checkbox" name="agreement">
+               <label class="checkbox__label" for="formAgreement"><span>Я даю своё согласие на обработку персональных данных в соответствии с <a href="">условиями</a>* </span></label>
+             </div>
+           </div>
+           <button type="submit" class="form__button">Отправить</button>
+         </form>
+       </section>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
       <!-- <script src="js/mixitup.min.js"></script> -->

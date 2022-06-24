@@ -59,24 +59,30 @@
          <div class="container">
             <h1 class="contacts__title">Контакты</h1>
             <div class="contacts__inner">
-               <div class="contacts__box" >
-                  <form action="#" class="contacts__form" id="form" method="post" onsubmit="send(event, 'send.php')">
-                     <button class="btn-close" onclick="closeForm()">X</button>
-                     <p class="contacts__form-title">Остались вопросы?<br>Оставьте заявку и мы свяжемся с вами.</p>
-                     <input type="text" class="contacts__form-input" placeholder="Имя">
-                     <input type="text" class="contacts__form-input" placeholder="E-mail/Телефон">
-                     <textarea class="contacts__form-textarea" name="" placeholder="Ваше сообщение"></textarea>
-                     <div class="checkbox">
+               <section class="form " id="form">
+                  <form class="form__body" method="post" onsubmit="send(event, 'send.php')" >
+                    <h1 class="form__title">Остались вопросы?<br>Оставьте заявку и мы свяжемся с вами.</h1>
+                    <div class="form__item">
+                      <input placeholder="Имя:" class="form__input _req" id="formName" type="text" name="name"  >
+                    </div>
+                    <div class="form__item">
+                      <input placeholder="Телефон:" class="form__input _req _email" id="formEmail" type="text" name="email"  >
+                    </div>
+                     <div class="form__item">
+                        <textarea placeholder="Сообщение:" class="form__input" name="" id="" ></textarea>
+                    </div>
+                    <div class="form__item">
+                      <div class="checkbox">
                         <input class="checkbox__input _req" checked id="formAgreement" type="checkbox" name="agreement">
-                        <label class="checkbox__label" for="formAgreement"><span>Я даю своё согласие на обработку
-                              персональных данных в соответствии с <a href="">условиями</a>* </span></label>
-                     </div>
-                     <button class="footer__social-btn" type="submit">Оставить заявку</button>
+                        <label class="checkbox__label" for="formAgreement"><span>Я даю своё согласие на обработку персональных данных в соответствии с <a href="">условиями</a>* </span></label>
+                      </div>
+                    </div>
+                    <button type="submit" class="form__button">Отправить</button>
                   </form>
-               </div>
+                </section>
                <div class="contacts__map">
                   <script type="text/javascript" charset="utf-8" async
-                     src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af557670504798c87d5255bad14b95930cf0bf2f9357e63f276e7e37355a7a580&amp;width=570&amp;height=630&amp;lang=ru_RU&amp;scroll=true"></script>
+                     src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af557670504798c87d5255bad14b95930cf0bf2f9357e63f276e7e37355a7a580&amp;width=570&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
                </div>
             </div>
          </div>
@@ -148,7 +154,7 @@
                      <img src="images/icons/inst.svg" alt="" class="footer__social-img">
                   </a>
                </div>
-               <button class="footer__social-btn">Оставить заявку</button>
+               <button class="footer__social-btn" >Оставить заявку</button>
             </div>
          </div>
       </div>

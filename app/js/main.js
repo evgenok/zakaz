@@ -5,12 +5,30 @@ $(function () {
    });
    
 })
-function openForm() {
-   document.getElementById("form").style.display = "block"; 
- }
- function closeForm() {
-   document.getElementById("form").style.display = "none";
-   }
+$(document).ready(function($) {
+	$('.footer__social-btn, .call__btn').click(function() {
+		$('.form__bg').fadeIn();
+		return false;
+	});	
+	
+	$('.btn-close').click(function() {
+		$(this).parents('.form__bg').fadeOut();
+		return false;
+	});		
+ 
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.form__bg').fadeOut();
+		}
+	});
+	
+	$('.form__bg').click(function(e) {
+		if ($(e.target).closest('.form__body').length == 0) {
+			$(this).fadeOut();					
+		}
+	});
+});
  function send(event, php){
        console.log("Отправка запроса");
        event.preventDefault ? event.preventDefault() : event.returnValue = false;
@@ -36,3 +54,4 @@ function openForm() {
        req.onerror = function() {alert("Ошибка отправки запроса");};
        req.send(new FormData(event.target));
  }
+ 
