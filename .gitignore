@@ -4,10 +4,10 @@
 node_modules/
 dist/
 .vscode
+*,sublime*
 npm-debug.*
 gulpfile.js
-
 package-lock.json
-app/css/*
+
 node_modules
-node_modules
+

@@ -114,43 +114,68 @@
                            <a href="advantages.html" class="footer__list-link">Отзывы</a>
                         </li>
                      </ul>
-                  </div>
-                  <div class="footer__item">
-                     <div class="footer__item-title">Связь с нами</div>
-                     <ul class="footer__item-list">
-                        <li class="footer__list-item">
-                           <a href="tel:88007003261" class="footer__list-link">8-(800)-700-32-61</a>
-                        </li>
-                        <li class="footer__list-item">
-                           <a href="mailto:novostroikisochi.ru@yandex.ru" class="footer__list-link">novostroikisochi.ru@yandex.ru</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="footer__item-social">
-                  <div class="footer__item-title">Связь с нами:</div>
-                  <div class="footer__social-box">
-                     <a href="https://api.whatsapp.com/send/?phone=88007003261&text=Здравствуйте%2C+у+меня+есть+вопрос" class="footer__social-link">
-                        <img src="images/icons/whats.svg" alt="" class="footer__social-img">
-                     </a>
-                     <a href="mailto:novostroikisochi.ru@yandex.ru" class="footer__social-link">
-                        <img src="images/icons/mail.svg" alt="" class="footer__social-img">
-                     </a>
-                     <a href="#" class="footer__social-link">
-                        <img src="images/icons/inst.svg" alt="" class="footer__social-img">
-                     </a>
-                  </div>
-                  <button class="footer__social-btn">Оставить заявку</button>
-               </div>
+               </ul>
+            </div>
+            <div class="footer__item">
+               <div class="footer__item-title">Связь с нами</div>
+               <ul class="footer__item-list">
+                  <li class="footer__list-item">
+                     <a href="tel:88007003261" class="footer__list-link">8-(800)-700-32-61</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="mailto:novostroikisochi.ru@yandex.ru" class="footer__list-link">novostroikisochi.ru@yandex.ru</a>
+                  </li>
+               </ul>
             </div>
          </div>
-      </footer>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-      <!-- <script src="js/mixitup.min.js"></script> -->
-      <script src="js/main.min.js"></script>
-      <script type="text/javascript" src="slick/slick.min.js"></script>
-   </body>
+         <div class="footer__item-social">
+            <div class="footer__item-title">Связь с нами:</div>
+            <div class="footer__social-box">
+               <a href="https://api.whatsapp.com/send/?phone=88007003261&text=Здравствуйте%2C+у+меня+есть+вопрос" class="footer__social-link">
+                  <img src="images/icons/whats.svg" alt="" class="footer__social-img">
+               </a>
+               <a href="mailto:novostroikisochi.ru@yandex.ru" class="footer__social-link">
+                  <img src="images/icons/mail.svg" alt="" class="footer__social-img">
+               </a>
+               <a href="#" class="footer__social-link">
+                  <img src="images/icons/inst.svg" alt="" class="footer__social-img">
+               </a>
+            </div>
+            <button class="footer__social-btn">Оставить заявку</button>
+         </div>
+      </div>
+   </div>
+</footer>
+<section class="form__bg" id="form">
+   <div class="form form-content" >
+      <form class="form__body" method="post" onsubmit="send(event, 'send.php')" >
+         <button class="btn-close">X</button>
+         <h1 class="form__title">Остались вопросы?<br>Оставьте заявку и мы свяжемся с вами.</h1>
+         <div class="form__item">
+            <input placeholder="Имя:" class="form__input _req" id="formName" type="text" name="name"  >
+         </div>
+         <div class="form__item">
+            <input placeholder="Телефон:" class="form__input _req _email" id="formEmail" type="text" name="email"  >
+         </div>
+         <div class="form__item">
+            <textarea placeholder="Сообщение:" class="form__input" name="" id="" ></textarea>
+         </div>
+         <div class="form__item">
+            <div class="checkbox">
+               <input class="checkbox__input _req" checked id="formAgreement" type="checkbox" name="agreement">
+               <label class="checkbox__label" for="formAgreement">
+                  <span>Я даю своё согласие на обработку персональных данных в соответствии с <a href="">условиями</a>* </span></label>
+            </div>
+         </div>
+         <button type="submit" class="form__button">Отправить</button>
+      </form>
+   </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<!-- <script src="js/mixitup.min.js"></script> -->
+<script src="js/main.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
 
 </html>
