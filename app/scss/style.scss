@@ -1,6 +1,7 @@
 @import "fonts";
 @import "global";
 @import "vars";
+@import "libs";
 
 //
 
@@ -471,7 +472,6 @@ textarea.form__input{
    font-family: "Raleway", sans-serif;
    font-size: 18px;
    font-weight: 500;
-   list-style: circle;
 }
 .objects__info-item {
    & + & {
