@@ -10,6 +10,7 @@ $(function () {
    
 
 });
+
 function onEntry(entry) {
    entry.forEach(change => {
       if (change.isIntersecting) {
