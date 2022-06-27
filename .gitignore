@@ -2,13 +2,13 @@
 .idea/
 .idea/*
 
-node_modules/
+# node_modules/
 dist/
 .vscode
 npm-debug.*
-gulpfile.js
+# gulpfile.js
 package-lock.json
 app/css/*
 
-node_modules
+# node_modules
 

@@ -7,7 +7,7 @@ const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
-const nunjucksRender = require('gulp-nunjucks-render');
+// const nunjucksRender = require('gulp-nunjucks-render');
 const del = require('del');
 
 function browsersync() {
@@ -19,12 +19,12 @@ function browsersync() {
 }
 
 
-function nunjacks() {
-   return src('app/*.njk')
-      .pipe(nunjucksRender())
-      .pipe(dest('app'))
-      .pipe(browserSync.stream())
-}
+// function nunjacks() {
+//    return src('app/*.njk')
+//       .pipe(nunjucksRender())
+//       .pipe(dest('app'))
+//       .pipe(browserSync.stream())
+// }
 
 function cleanDist() {
    return del('dist')
@@ -90,7 +90,7 @@ function build() {
 
 function watching() {
    watch(['app/scss/**/*.scss'], styles);
-   watch(['app/*.njk'], nunjacks);
+   // watch(['app/*.njk'], nunjacks);
    watch(['app/js/main.js', '!app/js/main.min.js'], scripts);
    watch(['app/*.html']).on('change', browserSync.reload);
 }
@@ -101,11 +101,11 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 exports.rename = rename;
-exports.nunjacks = nunjacks;
+// exports.nunjacks = nunjacks;
 exports.cleanDist = cleanDist;
 
 
 
 exports.build = series(cleanDist, images, build);
-
-exports.default = parallel(nunjacks, styles, scripts, browsersync, watching);
+// nunjacks,
+exports.default = parallel( styles, scripts, browsersync, watching);
