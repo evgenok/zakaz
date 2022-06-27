@@ -1,6 +1,7 @@
 .DS_Store
 .idea/
 .idea/*
+
 node_modules/
 dist/
 .vscode
@@ -8,5 +9,6 @@ npm-debug.*
 gulpfile.js
 package-lock.json
 app/css/*
+
 node_modules
 

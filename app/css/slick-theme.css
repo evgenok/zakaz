@@ -35,7 +35,7 @@
 
    cursor: pointer;
 
-   color: transparent;
+   color: #333;
    border: none;
    outline: none;
    background: transparent;
@@ -168,7 +168,7 @@
    width: 20px;
    height: 20px;
 
-   content: '•';
+   content: '';
    text-align: center;
 
    opacity: .25;

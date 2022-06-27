@@ -691,6 +691,18 @@ ul.product__info-list {
          }
       }
    }
+   .slick-prev {
+      left: 35px;
+      width: 40px;
+      height: 50px;
+      z-index: 1;
+   }
+   .slick-next {
+      right: 35px;
+      width: 40px;
+      height: 50px;
+      z-index: 1;
+   }
 }
 
 .invest {
@@ -713,7 +725,7 @@ ul.product__info-list {
 ul.invest__item-list__left {
    font-size: 18px;
    padding-right: 30px;
-   border-right: 1px solid #000;
+   border-right: 1px solid $suptitle;
 }
 .invest__item-item {
    & + & {
@@ -722,9 +734,9 @@ ul.invest__item-list__left {
 }
 ul.invest__item-list__right {
    text-align: center;
-   border-right: 1px solid #000;
+   border-right: 1px solid $suptitle;
    padding: 0 30px;
-   &:last-child{
+   &:last-child {
       font-size: 20px;
       font-weight: 700;
       margin: auto 0;
