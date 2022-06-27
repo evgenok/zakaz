@@ -1,3 +1,4 @@
+@import url(d:\Desktop\zakaz\node_modules\@fancyapps\fancybox\dist\jquery.fancybox.css);
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -101,12 +102,14 @@ main {
   font-weight: 700;
   color: #0A1815;
   margin-bottom: 100px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .text {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: 500;
+  -webkit-font-smoothing: antialiased;
 }
 
 .call__btn {
@@ -120,24 +123,21 @@ main {
       -ms-flex-align: center;
           align-items: center;
   border: none;
-  background: #166966;
   cursor: pointer;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  -webkit-box-shadow: 0px 0px 12px 3px rgba(214, 109, 4, 0.44);
-          box-shadow: 0px 0px 12px 3px rgba(214, 109, 4, 0.44);
+  background-color: #94c3d2;
 }
 
 .call__btn:hover {
   background: #fff;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  outline: 1px solid #166966;
 }
 
 .call__btn svg path {
-  fill: #d66d04;
+  fill: #0A1815;
 }
 
 .advantages__text {
@@ -333,7 +333,7 @@ main {
 }
 
 .bg-3 {
-  background-color: #F5F5F5;
+  background-color: #F1F1F1;
 }
 
 .bg-4 {
@@ -478,8 +478,8 @@ main {
 }
 
 .form__input:focus {
-  -webkit-box-shadow: 0 0 15px #C5AC2D;
-          box-shadow: 0 0 15px #C5AC2D;
+  -webkit-box-shadow: 0 0 15px #c5ac2d;
+          box-shadow: 0 0 15px #c5ac2d;
 }
 
 .form__input {
@@ -540,7 +540,7 @@ textarea.form__input {
 }
 
 .checkbox__label::before {
-  content: '';
+  content: "";
   -webkit-box-flex: 0;
       -ms-flex: 0 0 24px;
           flex: 0 0 24px;
@@ -553,7 +553,7 @@ textarea.form__input {
 }
 
 .checkbox__label::after {
-  content: '';
+  content: "";
   -webkit-transition: -webkit-transform 0.3s ease 0s;
   transition: -webkit-transform 0.3s ease 0s;
   transition: transform 0.3s ease 0s;
@@ -564,13 +564,13 @@ textarea.form__input {
   width: 16px;
   height: 16px;
   border-radius: 4px;
-  background-color: #C5AC2D;
+  background-color: #c5ac2d;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
 
-.checkbox__label a {
-  color: #C5AC2D;
+.checkbox__label span {
+  color: #c5ac2d;
   font-size: 18px;
   text-decoration: underline;
 }
@@ -769,7 +769,6 @@ textarea.form__input {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  list-style: circle;
 }
 
 .objects__info-item + .objects__info-item {
@@ -820,7 +819,7 @@ textarea.form__input {
       -ms-flex-align: center;
           align-items: center;
   min-height: 60px;
-  background-color: #C5AC2D;
+  background-color: #c5ac2d;
   color: #332208;
   font-size: 18px;
   font-weight: 700;
@@ -837,7 +836,7 @@ textarea.form__input {
 
 .btn-close {
   border: none;
-  background-color: #C5AC2D;
+  background-color: #c5ac2d;
   color: #332208;
   cursor: pointer;
   display: block;
@@ -887,5 +886,71 @@ textarea.form__input {
   left: 0;
   top: 0;
   z-index: 3;
+}
+
+.product {
+  padding-bottom: 90px;
+}
+
+.product__box {
+  height: 110vh;
+}
+
+.product__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__inner-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-list {
+  height: 480px !important;
+}
+
+.product__slide {
+  width: 800px;
+  height: 480px;
+  margin-right: 60px;
+}
+
+.product__slide-small {
+  width: 140px;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__slide-small__item {
+  margin-bottom: 20px;
+  width: 140px;
+  height: 80px;
+}
+
+.product__slide-small__item img {
+  width: 140px;
+  height: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.product__slide-big {
+  width: 620px;
+}
+
+.product__slide-big img {
+  width: 620px;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product__info {
+  width: 300px;
 }
 /*# sourceMappingURL=style.css.map */
