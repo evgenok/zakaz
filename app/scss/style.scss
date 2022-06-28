@@ -570,11 +570,12 @@ textarea.form__input {
 .product {
    padding-bottom: 90px;
 }
-.product__box {
+.skysoul__box {
    height: 70vh;
    background: url("../images/objects/skysoul/заставка.jpg") top center;
    background-repeat: no-repeat;
    background-size: cover;
+   background-attachment: fixed;
 }
 .product__inner {
    padding-top: 90px;
@@ -644,6 +645,7 @@ ul.product__info-list {
    display: flex;
    justify-content: center;
    align-items: center;
+   background-attachment: fixed;
 }
 .play__btn {
    height: 60px;
@@ -670,6 +672,7 @@ ul.product__info-list {
    }
 }
 .plan {
+   margin-bottom: 90px;
    text-align: center;
    .slick-dots {
       bottom: -40px;
@@ -705,9 +708,6 @@ ul.product__info-list {
    }
 }
 
-.invest {
-   margin-top: 90px;
-}
 .invest__inner {
    display: flex;
    justify-content: center;
@@ -742,6 +742,32 @@ ul.invest__item-list__right {
       margin: auto 0;
       border: none;
    }
+}
+
+.plan__slide--span {
+   display: flex;
+   color: $title;
+   font-size: 18px;
+   z-index: 1;
+}
+
+.atlas__box {
+   height: 70vh;
+   background: url("../images/objects/atlas/1.jpg") top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 0.7;
+   background-attachment: fixed;
+}
+.video__slider-atlas {
+   background: url("../images/objects/atlas/video.png") no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.video__slider {
+}
+.invest__item-title--arenda {
+   margin-top: 90px;
 }
 //
 

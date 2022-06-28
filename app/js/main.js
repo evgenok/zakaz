@@ -23,6 +23,8 @@ $(function () {
       clickable: true,
       asNavFor: '.product__slide-big',
    });
+
+
    $('.product__slide-big').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -31,10 +33,13 @@ $(function () {
       asNavFor: '.product__slide-small',
    });
 
-   $('.product__video-slider').slick({
-      dots: false,
+   $('.video__slider-atlas').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
    });
 
+   
    $('.plan__slider').slick({
       arrows: true,
       infinite: true,
