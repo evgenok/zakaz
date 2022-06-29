@@ -613,6 +613,7 @@ textarea.form__input {
       width: 620px;
       height: 480px;
       object-fit: cover;
+      cursor: zoom-in;
    }
 }
 .product__info {
@@ -669,6 +670,7 @@ ul.product__info-list {
    img {
       object-fit: cover;
       height: 500px;
+      cursor: zoom-in;
    }
 }
 .plan {

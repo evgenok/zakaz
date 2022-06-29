@@ -39,7 +39,7 @@ $(function () {
       arrows: false,
    });
 
-   
+
    $('.plan__slider').slick({
       arrows: true,
       infinite: true,
