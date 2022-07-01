@@ -76,6 +76,7 @@ body {
    min-height: 100vh;
    display: flex;
    flex-direction: column;
+   background-color: #ededed;
 }
 
 main {
@@ -89,12 +90,11 @@ main {
 }
 
 .title {
-   font-size: 24px;
-   line-height: 28px;
+   text-align: center;
+   font-size: 72px;
    font-weight: 700;
-   color: #29282d;
-   margin-bottom: 10px;
-   text-transform: uppercase;
+   color: #0A1815;
+   margin-bottom: 100px;
 }
 .text {
    font-family: "Quicksand", sans-serif;

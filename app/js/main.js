@@ -1,10 +1,66 @@
+//Это трогать не нужно 
 $(function () {
 
-   $('.slider').slick({
-
+   $(".menu a, .go-top").on("click", function (e) {
+     e.preventDefault();
+     var id = $(this).attr('href'),
+       top = $(id).offset().top;
+     $('body,html').animate({ scrollTop: top }, 2000);
    });
-   
-})
+   $('.menu__btn').on('click', function () {
+     $('.menu__list').toggleClass('menu__list--active');
+   });
+   $('.reviews__slider').slick({
+     arrows: false,
+     dots: true,
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     responsive: [
+       {
+         breakpoint: 815,
+         settings: {
+           slidesToShow: 2,
+         }
+       },
+       {
+         breakpoint: 600,
+         settings: {
+           slidesToShow: 1,
+         }
+       },
+     ]
+   });
+ 
+ });
+$(function () {
+
+   $('.objects__slider').slick({
+      fade: true,
+      autoplay:true,
+      autoplaySpeed: 3000,
+      arrows:false
+   });
+
+});
+
+function onEntry(entry) {
+   entry.forEach(change => {
+      if (change.isIntersecting) {
+         change.target.classList.add('element-show');
+      }
+   });
+}
+
+let options = {
+   threshold: [0.5]
+};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+
+for (let elm of elements) {
+   observer.observe(elm);
+}
+
 $(document).ready(function($) {
 	$('.footer__social-btn, .call__btn').click(function() {
 		$('.form__bg').fadeIn();
