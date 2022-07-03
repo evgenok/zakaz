@@ -468,6 +468,7 @@ textarea.form__input {
    text-align: center;
    font-size: 26px;
    font-weight: 500;
+   line-height: 28px;
    margin-bottom: 25px;
 }
 .objects__info-list {
@@ -603,9 +604,7 @@ textarea.form__input {
    display: flex;
    justify-content: space-between;
  }
- .reviews__slider .reviews__item + .reviews__item{
-   margin-left: 20px;
- }
+ 
  .reviews__item{
    display: flex;
    flex-direction: column;
@@ -617,6 +616,7 @@ textarea.form__input {
  .reviews__item-bg {
    background: #f9f4f4;
    padding: 28px;
+   margin: 0 10px;
  }
  .reviews__item-bg img{
    width: 100px;

@@ -91,6 +91,12 @@
      .form {
         margin-right: 15px; 
      }
+     .skysoul__box{
+      background-attachment: local;
+     }
+     .product__inner{
+      flex-wrap: wrap;
+     }
 }
 @media (max-width: 970px){
     .contacts__inner{
@@ -137,7 +143,33 @@
     .about__bg-1{
        max-width: 100%;
     }
+    .invest__inner{
+      flex-wrap: wrap;
+    }
+    .invest__item{
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    ul.invest__item-list__right{
+      margin-bottom: 30px;
+    }
      
+}
+@media (max-width: 845px){
+   .objects__item{
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+   }
+   .objects__slider{
+      width: 100%;
+   }
+   .objects__info {
+      width: 100%;
+   }
+   .slick-list{
+      height: 100% !important;
+   }
 }
 @media (max-width: 640px){
  .advantages__title{
