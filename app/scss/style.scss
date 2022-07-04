@@ -678,9 +678,16 @@ textarea.form__input {
 .product {
    padding-bottom: 90px;
 }
-.skysoul__box {
+.skysoul__box{
    height: 70vh;
-   background: url("../images/objects/skysoul/заставка.jpg") top center;
+   background: url("../images/objects/skysoul/заставка.jpg") ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.dagomis__box{
+   height: 70vh;
+   background: url("../images/objects/dagomis/заставка.jpg") ;
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -873,6 +880,31 @@ ul.invest__item-list__right {
    background: url("../images/objects/atlas/video.png") no-repeat center;
    background-size: cover;
    background-attachment: fixed;
+   
+}
+.video__slider{
+   align-items: center;
+   display: flex !important;
+   justify-content: center;
+   margin-top: 220px;
+}
+.slick-prev-vedeo {
+   left: 35px;
+   width: 40px;
+   height: 50px;
+   z-index: 1;
+   position: absolute;
+   border: none;
+   background-color: transparent;
+}
+.slick-next-video {
+   right: 45px;
+   width: 40px;
+   height: 50px;
+   z-index: 1;
+   position: absolute;
+   border: none;
+   background-color: transparent;
 }
 .invest__item-title--arenda {
    margin-top: 90px;
