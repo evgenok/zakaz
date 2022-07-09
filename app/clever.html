@@ -21,26 +21,24 @@
    <header class="header">
       <div class="container">
          <nav class="menu">
-            <a href="index.html" class="logo">
-               Центр новостроек Сочи и Адлера
+            <a href="#" class="logo logo__skysoul">
+               AK<br>
+               <span>clever</span>
             </a>
             <button class="menu__list-btn">
             </button>
             <ul class="menu__list">
                <li class="menu__list-item">
-                  <a href="objects.html" class="menu__list-link">Наши объекты</a>
+                  <a href="#video" class="menu__list-link">Видео</a>
                </li>
                <li class="menu__list-item">
-                  <a href="advantages.html" class="menu__list-link">Преимущества</a>
+                  <a href="#plan" class="menu__list-link">Планировки</a>
                </li>
                <li class="menu__list-item">
-                  <a href="index.html" class="menu__list-link">О компании</a>
+                  <a href="#invest" class="menu__list-link">Прогноз</a>
                </li>
                <li class="menu__list-item">
-                  <a href="contacts.html" class="menu__list-link">Контакты</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="advantages.html" class="menu__list-link">Отзывы</a>
+                  <a href="#work" class="menu__list-link">Ход строительства</a>
                </li>
             </ul>
             <button class="menu__btn call__btn">
@@ -140,7 +138,7 @@
             </div>
             <div class="video__title title">Посмотрите обзорное видео</div>
          </div>
-         <div class="product__video">
+         <div class="product__video" id="video">
             <div class="video__box">
                <a data-fancybox href="https://www.youtube.com/watch?v=cKi5KC1Vg08" class="play__btn">
                   <img src="images/icons/play.svg" alt="">
@@ -150,7 +148,7 @@
          <div class="container">
             <div class="plan__title title">Посмотрите планировки. Внутреннее пространство разработано с учетом всех
                современных тенденций в дизайне.</div>
-            <div class="plan">
+            <div class="plan" id="plan">
                <div class="plan__slider">
                   <a rel="simplebox" href="images/objects/clever/plan/1.jpeg" class="plan__slide">
                      <img src="images/objects/clever/plan/1.jpeg" alt="">
@@ -166,8 +164,56 @@
                   </a>
                </div>
             </div>
-            <div class="plan__title title">Взгляните на ход строительства комплекса</div>
-            <div class="plan">
+            <div class="skysoul__invest invest" id="invest">
+               <div class="invest__item-title title">Инвестиционный прогноз при перепродаже</div>
+               <div class="invest__inner">
+                  <div class="invest__item">
+                     <ul class="invest__item-list__left">
+                        <li class="invest__item-item">Тип номера</li>
+                        <li class="invest__item-item">Площадь</li>
+                        <li class="invest__item-item">Цена за м2</li>
+                        <li class="invest__item-item">Цена</li>
+                        <li class="invest__item-item">Дата входа в проект</li>
+                        <li class="invest__item-item">Срок сдачи комплекса</li>
+                        <li class="invest__item-item">Прогнозируемая цена после сдачи комплекса</li>
+                     </ul>
+                  </div>
+                  <div class="invest__item">
+                     <ul class="invest__item-list__right">
+                        <li class="invest__item-item">
+                           <b>Номер</b>
+                        </li>
+                        <li class="invest__item-item">42 м2</li>
+                        <li class="invest__item-item">185 000 ₽</li>
+                        <li class="invest__item-item">7 922 700 ₽</li>
+                        <li class="invest__item-item">июнь 2022</li>
+                        <li class="invest__item-item">2 квартал 2025</li>
+                        <li class="invest__item-item">450 000 ₽</li>
+                     </ul>
+                     <ul class="invest__item-list__right">
+                        <li class="invest__item-item">
+                           <b>Номер</b>
+                        </li>
+                        <li class="invest__item-item">64 м2</li>
+                        <li class="invest__item-item">173 000 ₽</li>
+                        <li class="invest__item-item">11 182 720 ₽</li>
+                        <li class="invest__item-item">июнь 2022</li>
+                        <li class="invest__item-item">2 квартал 2025</li>
+                        <li class="invest__item-item">400 000 ₽</li>
+                     </ul>
+                     <ul class="invest__item-list__right">
+                        <li class="invest__item-item">Доходность</li>
+                        <li class="invest__item-item">
+                           <b>40%</b>
+                        </li>
+                        <li class="invest__item-item">Срок инвестирования</li>
+                        <li class="invest__item-item">1 год</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="plan__title title plan__clever">Взгляните на ход строительства комплекса</div>
+            <div class="plan" id="work">
                <div class="plan__slider">
                   <div class="plan__slide">
                      <img src="images/objects/clever/2-1.jpg" alt="">
@@ -203,40 +249,6 @@
       <div class="container">
          <div class="footer__inner">
             <div class="footer__box">
-               <div class="footer__item">
-                  <div class="footer__item-title">Комплексы</div>
-                  <ul class="footer__item-list">
-                     <li class="footer__list-item">
-                        <a href="clever.html" class="footer__list-link">AK CLEVER</a>
-                     </li>
-                     <li class="footer__list-item">
-                        <a href="atlas.html" class="footer__list-link">Atlas</a>
-                     </li>
-                     <li class="footer__list-item">
-                        <a href="dagomis.html" class="footer__list-link">ЖК Каньон Дагомыс 2</a>
-                     </li>
-                     <li class="footer__list-item">
-                        <a href="skysoul.html" class="footer__list-link">SkySoul</a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="footer__item">
-                  <div class="footer__item-title">Центр новостроек</div>
-                  <ul class="footer__item-list">
-                     <li class="footer__list-item">
-                        <a href="objects.html" class="footer__list-link">Наши объекты</a>
-                     </li>
-                     <li class="footer__list-item">
-                        <a href="advantages.html" class="footer__list-link">Преимущества</a>
-                     </li>
-                     <li class="footer__list-item">
-                        <a href="index.html" class="footer__list-link">О компании</a>
-                     </li>
-                     <li class="footer__list-item">
-                        <a href="advantages.html" class="footer__list-link">Отзывы</a>
-                     </li>
-                  </ul>
-               </div>
                <div class="footer__item">
                   <div class="footer__item-title">Связь с нами</div>
                   <ul class="footer__item-list">

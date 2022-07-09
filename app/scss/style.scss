@@ -14,6 +14,7 @@
 .menu {
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 .menu__list-btn{
    display: none;
@@ -26,6 +27,18 @@
    font-size: 18px;
    font-weight: 500;
    line-height: 24px;
+   
+}
+.logo__skysoul{
+   letter-spacing: 4px;
+   font-size: 21px;
+   font-family: "Quicksand", sans-serif;
+   font-weight: 500;
+}
+.logo__skysoul span{
+   letter-spacing: 3px;
+   font-size: 16px;
+
 }
 .menu__list {
    display: flex;
@@ -33,7 +46,7 @@
    align-items: center;
 }
 .menu__list-item + .menu__list-item {
-   margin-left: 10px;
+   margin-left: 20px;
 }
 .menu__list-link {
    color: $title;
@@ -679,18 +692,34 @@ textarea.form__input {
    padding-bottom: 90px;
 }
 .skysoul__box{
-   height: 70vh;
-   background: url("../images/objects/skysoul/заставка.jpg") ;
+   height: calc(100vh - 65px);
+   background: linear-gradient(190deg, #504f4e -90%, rgba(12, 12, 12, 0.3)), url("../images/objects/skysoul/заставка.jpg") ;
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
 }
 .dagomis__box{
-   height: 70vh;
-   background: url("../images/objects/dagomis/заставка.jpg") ;
+   height: calc(100vh - 65px) ;
+   background: linear-gradient(190deg, #504f4e -90%, rgba(12, 12, 12, 0.3)), url("../images/objects/dagomis/заставка.jpg") ;
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
+   
+}
+.product__header-text{
+   text-align: center;
+   position: absolute;
+   left: 0;
+   right: 0;
+   font-size: 34px;
+   line-height: 40px;
+   letter-spacing: 1.4px;
+   font-family: "Quicksand", sans-serif;
+   font-weight: 500;
+   text-transform: uppercase;
+   color: #dad4da;
+   top: 250px;
+   bottom: 0;
 }
 .product__inner {
    padding-top: 90px;
@@ -776,6 +805,9 @@ ul.product__info-list {
    padding: 40px;
    background-color: $bg2;
    box-shadow: $shadow;
+}
+.plan__clever{
+   margin-top: 50px;
 }
 .plan__slider {
    height: 500px;
@@ -869,8 +901,8 @@ ul.invest__item-list__right {
 }
 
 .atlas__box {
-   height: 70vh;
-   background: url("../images/objects/atlas/1.jpg") top center;
+   height: calc(100vh - 65px);
+   background: url("../images/objects/atlas/1.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    opacity: 0.7;

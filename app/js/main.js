@@ -102,7 +102,7 @@ for (let elm of elements) {
 }
 
 $(document).ready(function ($) {
-   $('.footer__social-btn, .request__btn-feedback').click(function () {
+   $('.footer__social-btn, .request__btn-feedback, .menu__btn').click(function () {
       $('.form__bg').fadeIn();
       return false;
    });
