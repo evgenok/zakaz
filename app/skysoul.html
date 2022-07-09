@@ -11,6 +11,9 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Raleway:ital,wght@0,400;0,500;0,700;1,300&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
    <link rel="stylesheet" href="css/slick-theme.css">
    <link rel="stylesheet" href="css/slick.css">
@@ -18,54 +21,52 @@
 </head>
 
 <body>
-   <header class="header">
+   <header class="header skysoul__header">
       <div class="container">
-         <nav class="menu">
+         <nav class="menu skysoul__menu">
             <a href="#" class="logo logo__skysoul">
-               Skysoul<br>
-               <span>resort</span>
+               <img class="logo__skysoul" src="/images/icons/logo.png.webp" alt="">
             </a>
-            <button class="menu__list-btn">
+            <button class="header__form">
+               <p>Оставить заявку </p> 
             </button>
-            <ul class="menu__list">
-               <li class="menu__list-item">
-                  <a href="#gallery" class="menu__list-link">Галерея</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="#video" class="menu__list-link">Видео</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="#plan" class="menu__list-link">Планировки</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="#invest" class="menu__list-link">Прогноз</a>
-               </li>
-            </ul>
-            <button class="menu__btn call__btn">
-               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path
-                     d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z" />
-               </svg>
-            </button>
-            <div class="menu__contacts">
-               <a href="tel:88007003261" class="menu__contacts-tel">8-(800)-700-32-61</a>
-               <a href="mailto:novostroikisochi.ru@yandex.ru"
-                  class="menu__contacts-email">novostroikisochi.ru@yandex.ru</a>
-            </div>
+            <a href="tel:88007003261" class="header__phone">8-(800)-700-32-61</a>
          </nav>
       </div>
    </header>
    <main class="main">
-      <section class="product" >
+      <section class="product">
          <div class="product__box skysoul__box">
             <p class="product__header-text">
                ВО ВЛАСТИ АБСОЛЮТНОГО<br>
                БЛАЖЕНСТВА
             </p>
          </div>
+         <section class="advantages">
+            <div class="container">
+               <div class="advantages__inner inner__skysoul">
+                  <a href="#gallery" class="advantages__item advantages__item--1">
+                     <p class="advantages__text">Галерея</p>
+                  </a>
+                  <a href="#advantages" class="advantages__item advantages__item--2">
+                     <p class="advantages__text">Преимущества</p>
+                  </a>
+                  <a href="#video" class="advantages__item advantages__item--3">
+                     <p class="advantages__text">Наше видео</p>
+                  </a>
+                  <a href="#invest" class="advantages__item advantages__item--6__skysoul">
+                     <p class="advantages__text">Инвестиционный<br>план</p>
+                  </a>
+                  <a href="#plan" class="advantages__item advantages__item--7__skysoul">
+                     <p class="advantages__text">Планировки</p>
+                  </a>
+               </div>
+            </div>
+         </section>
          <div class="container">
-            <div class="product__inner" id="gallery">
-               <div class="product__inner-slider product__slide" >
+            <h2 class="product__title" id="gallery">Галерея</h2>
+            <div class="product__inner">
+               <div class="product__inner-slider product__slide">
                   <div class="product__slide-small">
                      <div class="product__slide-small__item">
                         <img src="images/objects/skysoul/1.jpg" alt="" class="product__slide-small__img">
@@ -203,20 +204,77 @@
                      <li class="product__info-item">&raquo;Открытый бассейн 1400 м2</li>
                      <li class="product__info-item">&raquo;Закрытый бассейн 400 м2</li>
                      <li class="product__info-item">&raquo;Детские площадки</li>
-                     <li class="product__info-item">&raquo;Спортивные площадки</li>
+                     <li class="product__info-item">&raquo;Тенисный корт</li>
+                     <li class="product__info-item">&raquo;Баскетбольная площадка </li>
+                     <li class="product__info-item">&raquo;Футболная площадка площадка </li>
                      <li class="product__info-item">&raquo;Прогулочная набережная</li>
-                     <li class="product__info-item">&raquo;Ресторан и кафе-бар</li>
+                     <li class="product__info-item">&raquo;Более 3-х ресторанов и кафе-баров</li>
                      <li class="product__info-item">&raquo;Коворкинг С Wi-fi для работы</li>
                      <li class="product__info-item">&raquo;Амфитеатр</li>
                      <li class="product__info-item">&raquo;Терраса на крыше SPA-центра</li>
                      <li class="product__info-item">&raquo;Эксплуатируемая кровля</li>
                      <li class="product__info-item">&raquo;Современные фасады</li>
                   </ul>
-                  <button class="footer__social-btn">Оставить заявку</button>
+                  <button class="header__form product__form">
+                     <p>Оставить заявку </p> 
+                  </button>
                </div>
             </div>
-            <div class="video__title title">Посмотрите обзорное видео</div>
+           
          </div>
+         <div class="product__advantages">
+            <div class="container">
+            <h2 class="product__advantages-title" id="advantages">
+               Преимущества
+            </h2>
+            <h4 class="product__advantages-suptitle">
+               ТУРИСТИЧЕСКО-РЕКРЕАЦИОННЫЙ КОМПЛЕКС SKYSOUL RESORT -
+               МАСШТАБНЫЙ ПРОЕКТ, В КОТОРОМ ПРЕДУСМОТРЕНО:
+            </h4>
+            <div class="product__advantages-items">
+               <div class="product__advantages-col-1">
+                  <div class="col-item item-1 left-1">  
+                     <img class="col-item-img" src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_1.png" alt="">
+                     <p>Премиальная инфраструктура</p> 
+                  </div>
+                  <div class="col-item item-1 item-right"> 
+                     <img class="col-item-img" src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_2.png" alt="">
+                     <p >Парки, прогулочные зоны и скверы</p> 
+                  </div>
+                  <div class="col-item item-3"> 
+                     <img class="col-item-img" src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_3.png" alt="">
+                     <p>Торговый центр и зона бутиков</p> 
+                  </div>
+               </div>
+               <div class="product__advantages-col-2">
+                  <div class="col-item item-2"> 
+                     <img class="col-item-img" src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_4.png" alt="">
+                     <p>Приватная охраняемая территория
+                     Безопасность 360/24</p> 
+                  </div>
+                  <div class="col-item item-2 item-right"> 
+                     <img class="col-item-img" src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_5.png" alt="">
+                     <p> Отель 5*</p>
+                  </div>
+                  <div class="col-item item-4"> 
+                     <img class="col-item-img" src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_6.png" alt="">
+                     <p>Собственная Управляющая Компания</p> 
+                  </div>
+               </div>
+               <div class="product__advantages-col-3">
+                  <div class="col-item item-3"> 
+                     <img class="col-item-img" src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_3.png" alt="">
+                     <p>Торговый центр и зона бутиков</p> 
+                  </div>
+                  <div class="col-item item-4"> 
+                     <img class="col-item-img" src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_6.png" alt="">
+                     <p>Собственная Управляющая Компания</p> 
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         <div class="video__title title">Посмотрите обзорное видео</div>
          <div class="product__video" id="video">
             <div class="video__box">
                <a data-fancybox href="https://www.youtube.com/watch?v=Ehp7KCrCdAw" class="play__btn">
@@ -329,7 +387,7 @@
       <div class="container">
          <div class="footer__inner">
             <div class="footer__box">
-               
+
                <div class="footer__item">
                   <div class="footer__item-title">Связь с нами</div>
                   <ul class="footer__item-list">
@@ -357,7 +415,9 @@
                      <img src="images/icons/inst.svg" alt="" class="footer__social-img">
                   </a>
                </div>
-               <button class="footer__social-btn">Оставить заявку</button>
+               <button class="footer__form">
+                  <p>Оставить заявку </p> 
+               </button>
             </div>
          </div>
       </div>

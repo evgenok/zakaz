@@ -6,7 +6,7 @@
 //
 
 .header {
-   height: 65px;
+   height: 75px;
    background-color: $bg;
    padding: 10px;
    z-index: 1;
@@ -27,18 +27,52 @@
    font-size: 18px;
    font-weight: 500;
    line-height: 24px;
-   
 }
 .logo__skysoul{
    letter-spacing: 4px;
    font-size: 21px;
    font-family: "Quicksand", sans-serif;
    font-weight: 500;
+   width: 252px;
+   height: 54px;
 }
 .logo__skysoul span{
    letter-spacing: 3px;
    font-size: 16px;
 
+}
+.header__form,
+.footer__form{
+   transition: all .4s;
+    z-index: 10;
+    color: #fff;
+    text-decoration: none;
+    background: url('../images/btn_bg.jpg') no-repeat center center/cover;
+    display: inline-block;
+    height: 50px;
+    line-height: 40px;
+    vertical-align: middle;
+    padding: 0 30px;
+    border-radius: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+.header__form:hover,
+.footer__form:hover{
+   box-shadow: 10px 10px 40px 10px rgba(236, 230, 59, 0.4);;
+}
+.header__phone{
+   font-family: "Kazimir", sans-serif;
+   font-weight: 500;
+   color: #000;
+   font-size: 20px;
+}
+.header__form p{
+   font-family: "Kazimir", sans-serif;
+   font-weight: 500;
+   text-transform: uppercase;
 }
 .menu__list {
    display: flex;
@@ -354,15 +388,21 @@ textarea.form__input {
 
    gap: 25px;
    height: 100%;
+   
+}
+.inner__skysoul{
+   height: 610px;
 }
 .advantages__item {
    display: flex;
    justify-content: center;
+   text-align: center;
+   line-height: 20px;
    align-items: center;
    min-height: 300px;
    height: 100%;
    box-shadow: 0px 10px 40px 0px rgba(172, 172, 172, 0.3);
-   padding: 20px;
+   padding: 45px;
    transform: scale(1);
    background-blend-mode: multiply;
    .advantages__text {
@@ -442,10 +482,28 @@ textarea.form__input {
 }
 .advantages__text {
    font-size: 26px;
-   @extend %Quicksand-700;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 300;
    color: #fefefe;
 }
+.advantages__item--6__skysoul {
+   background: url("../images/advantages/6.jpg") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 2;
+   grid-column-start: 3;
 
+   grid-row-end: 3;
+   grid-column-end: 3;
+}
+.advantages__item--7__skysoul {
+   background: url("../images/advantages/7.webp") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 1;
+   grid-column-start: 3;
+
+   grid-row-end: 1;
+   grid-column-end: 3;
+}
 .objects {
    padding: 90px 0;
 }
@@ -692,14 +750,14 @@ textarea.form__input {
    padding-bottom: 90px;
 }
 .skysoul__box{
-   height: calc(100vh - 65px);
+   height: calc(100vh - 75px);
    background: linear-gradient(190deg, #504f4e -90%, rgba(12, 12, 12, 0.3)), url("../images/objects/skysoul/заставка.jpg") ;
    background-repeat: no-repeat;
    background-size: cover;
-   background-attachment: fixed;
+   background-attachment: initial;
 }
 .dagomis__box{
-   height: calc(100vh - 65px) ;
+   height: calc(100vh - 75px) ;
    background: linear-gradient(190deg, #504f4e -90%, rgba(12, 12, 12, 0.3)), url("../images/objects/dagomis/заставка.jpg") ;
    background-repeat: no-repeat;
    background-size: cover;
@@ -714,7 +772,7 @@ textarea.form__input {
    font-size: 34px;
    line-height: 40px;
    letter-spacing: 1.4px;
-   font-family: "Quicksand", sans-serif;
+   font-family: "Kazimir", sans-serif;
    font-weight: 500;
    text-transform: uppercase;
    color: #dad4da;
@@ -724,6 +782,14 @@ textarea.form__input {
 .product__inner {
    padding-top: 90px;
    display: flex;
+}
+.product__title{
+   font-size: 44px;
+   line-height: 40px;
+   letter-spacing: 1.4px;
+   font-family: "Kazimir", sans-serif;
+   font-weight: 600;
+   text-align: center;
 }
 .product__inner-slider {
    display: flex;
@@ -769,17 +835,104 @@ textarea.form__input {
 }
 ul.product__info-list {
    color: $text;
-   margin-bottom: 25px;
+   margin-bottom: 15px;
 }
 .product__info-item {
    font-size: 16px;
-   font-weight: 500;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 300;
    & + & {
       margin-top: 12px;
    }
 }
+.product__advantages{
+   margin-top: 90px;
+   height: 130vh;
+   background-size: cover;
+   color: #fefefe;
+   background-repeat: no-repeat;
+   background-image: linear-gradient(600deg, #50504f -355%, rgba(85, 83, 83, 0.3)),url('../images/objects/skysoul/16.jpg');
+}
+.product__advantages-title{
+   font-size: 44px;
+   line-height: 40px;
+   letter-spacing: 1.4px;
+   font-family: "Kazimir";
+    font-weight: 300;
+   text-transform: uppercase;
+   text-align: center;
+   padding-top: 20px;
+   color: #fefefe;
+}
+.product__advantages-suptitle{
+   font-size: 22px;
+   line-height: 40px;
+   letter-spacing: 1.4px;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+   text-transform: uppercase;
+   text-align: center;
+   color: #fefefe;
+   width: 900px;
+   margin: 0 auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.product__advantages-col-1,
+.product__advantages-col-2{
+   display: flex;
+   justify-content: center;
+}
+.product__advantages-col-3{
+   display: none;
+}
+.col-item{
+   font-family: "Montserrat", sans-serif;
+   font-weight: 300;
+   width: 33%;
+   text-align: center;
+   font-size: 19px;
+   line-height: 26px;
+   letter-spacing: 0.6;
+   
+}
+.item-1{
+   border-right: 1px solid #fefefe;
+   border-bottom: 1px solid #fefefe;
+   padding-bottom: 30px;
+   padding-top: 100px;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+.item-3{
+   border-bottom: 1px solid #fefefe;
+   padding-bottom: 30px;
+   padding-top: 100px;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+.item-2{
+   border-right: 1px solid #fefefe;
+   padding-top:100px;
+   padding-bottom: 30px;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+.item-4{
+   padding-top:100px;
+   padding-bottom: 30px;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+.col-item-img{
+   margin: 0 auto;
+   margin-bottom: 40px;
+}
 .video__title {
    margin-top: 90px;
+   font-family: "Kazimir", sans-serif;
+   font-weight: 500;
 }
 .product__video {
    margin: 90px 0;
@@ -799,6 +952,8 @@ ul.product__info-list {
 .plan__title {
    line-height: 1.2;
    font-size: 36px;
+   font-family: "Kazimir";
+    font-weight: 300;
 }
 
 .plan {
@@ -870,6 +1025,8 @@ ul.product__info-list {
 .invest__item-title {
    font-size: 48px;
    line-height: 1.2;
+   font-family: "Kazimir";
+    font-weight: 300;
 }
 ul.invest__item-list__left {
    font-size: 18px;
@@ -901,7 +1058,7 @@ ul.invest__item-list__right {
 }
 
 .atlas__box {
-   height: calc(100vh - 65px);
+   height: calc(100vh - 75px);
    background: url("../images/objects/atlas/1.jpg");
    background-repeat: no-repeat;
    background-size: cover;
@@ -942,5 +1099,4 @@ ul.invest__item-list__right {
    margin-top: 90px;
 }
 //
-
 @import "media";

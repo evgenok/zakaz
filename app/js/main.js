@@ -1,6 +1,6 @@
 
 $(function () {
-   $(".menu a, .go-top").on("click", function (e) {
+   $(".menu a, .advantages__inner a, .go-top").on("click", function (e) {
       var id = $(this).attr('href'),
         top = $(id).offset().top;
       $('body,html').animate({ scrollTop: top }, 2000);
@@ -102,7 +102,7 @@ for (let elm of elements) {
 }
 
 $(document).ready(function ($) {
-   $('.footer__social-btn, .request__btn-feedback, .menu__btn').click(function () {
+   $('.footer__social-btn, .request__btn-feedback, .menu__btn, .header__form').click(function () {
       $('.form__bg').fadeIn();
       return false;
    });
