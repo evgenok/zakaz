@@ -9,12 +9,13 @@
    height: 75px;
    background-color: $bg;
    padding: 10px;
-   z-index: 1;
+   z-index: 2;
 }
 .menu {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   text-align: center;
 }
 .menu__list-btn{
    display: none;
@@ -35,6 +36,12 @@
    font-weight: 500;
    width: 252px;
    height: 54px;
+}
+.logo__atlas{
+   letter-spacing: 4px;
+   font-size: 21px;
+   font-family: "Quicksand", sans-serif;
+   font-weight: 500;
 }
 .logo__skysoul span{
    letter-spacing: 3px;
@@ -58,6 +65,9 @@
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+}
+.clever__btn{
+   background: rgb(65, 136, 101) no-repeat center center/cover;
 }
 .header__form:hover,
 .footer__form:hover{
@@ -480,13 +490,111 @@ textarea.form__input {
    grid-row-end: 6;
    grid-column-end: 3;
 }
+.advantages__item_clever--1 {
+   background: url("../images/objects/clever/2-1.jpg ") center no-repeat rgba(0, 0, 0, 0.6);
+
+   background-size: cover;
+   grid-row-start: 1;
+   grid-column-start: 1;
+
+   grid-row-end: 2;
+   grid-column-end: 2;
+}
+.advantages__item_clever--2 {
+   background: url("../images/objects/clever/4.jpg") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 1;
+   grid-column-start: 2;
+
+   grid-row-end: 3;
+   grid-column-end: 3;
+   .advantages__text {
+      color: rgb(218, 218, 218);
+   }
+}
+.advantages__item_clever--3 {
+   background: url("../images/objects/clever/2-5.jpg") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 2;
+   grid-column-start: 1;
+
+   grid-row-end: 3;
+   grid-column-end: 2;
+}
+.advantages__item_clever--6 {
+   background: url("../images/advantages/6.jpg") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 4;
+   grid-column-start: 2;
+
+   grid-row-end: 5;
+   grid-column-end: 3;
+}
+.advantages__item_clever--7 {
+   background: url("../images/advantages/7.webp") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 5;
+   grid-column-start: 1;
+
+   grid-row-end: 6;
+   grid-column-end: 3;
+}
+.advantages__item_atlas--1 {
+   background: url("../images/objects/atlas/11.jpg") center no-repeat rgba(0, 0, 0, 0.6);
+
+   background-size: cover;
+   grid-row-start: 1;
+   grid-column-start: 1;
+
+   grid-row-end: 2;
+   grid-column-end: 2;
+}
+.advantages__item_atlas--2 {
+   background: url("../images/objects/atlas/2.jpg") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 1;
+   grid-column-start: 2;
+
+   grid-row-end: 3;
+   grid-column-end: 3;
+   .advantages__text {
+      color: rgb(218, 218, 218);
+   }
+}
+.advantages__item_atlas--3 {
+   background: url("../images/objects/atlas/7.jpg") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 2;
+   grid-column-start: 1;
+
+   grid-row-end: 3;
+   grid-column-end: 2;
+}
+.advantages__item_atlas--6 {
+   background: url("../images/advantages/6.jpg") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 2;
+   grid-column-start: 3;
+
+   grid-row-end: 2;
+   grid-column-end: 3;
+}
+.advantages__item_atlas--7 {
+   background: url("../images/advantages/7.webp") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 2;
+   grid-column-start: 3;
+
+   grid-row-end: 1;
+   grid-column-end: 3;
+}
 .advantages__text {
    font-size: 26px;
    font-family: "Montserrat", sans-serif;
    font-weight: 300;
    color: #fefefe;
 }
-.advantages__item--6__skysoul {
+.advantages__item_clever--6__clever {
    background: url("../images/advantages/6.jpg") center no-repeat rgba(0, 0, 0, 0.6);
    background-size: cover;
    grid-row-start: 2;
@@ -495,10 +603,75 @@ textarea.form__input {
    grid-row-end: 3;
    grid-column-end: 3;
 }
+.advantages__item_clever--7__clever {
+   background: url("../images/advantages/7.webp") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 1;
+   grid-column-start: 3;
+
+   grid-row-end: 1;
+   grid-column-end: 3;
+}
+.advantages__item--6__skysoul {
+   background: url("../images/advantages/6.jpg") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 2;
+   grid-column-start: 3;
+   grid-row-end: 3;
+   grid-column-end: 3;
+}
 .advantages__item--7__skysoul {
    background: url("../images/advantages/7.webp") center no-repeat rgba(0, 0, 0, 0.6);
    background-size: cover;
    grid-row-start: 1;
+   grid-column-start: 3;
+   grid-row-end: 1;
+   grid-column-end: 3;
+}
+.advantages__item_dagomis--1 {
+   background: url("../images/objects/dagomis/слайдер-5.png") center no-repeat rgba(0, 0, 0, 0.6);
+
+   background-size: cover;
+   grid-row-start: 1;
+   grid-column-start: 1;
+
+   grid-row-end: 2;
+   grid-column-end: 2;
+}
+.advantages__item_dagomis--2 {
+   background: url("../images/objects/dagomis/слайдер\ -1.png") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 1;
+   grid-column-start: 2;
+
+   grid-row-end: 3;
+   grid-column-end: 3;
+   .advantages__text {
+      color: rgb(218, 218, 218);
+   }
+}
+.advantages__item_dagomis--3 {
+   background: url("../images/objects/dagomis/слайдер\ -3.png") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 2;
+   grid-column-start: 1;
+
+   grid-row-end: 3;
+   grid-column-end: 2;
+}
+.advantages__item_dagomis--6 {
+   background: url("../images/advantages/6.jpg") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 2;
+   grid-column-start: 3;
+
+   grid-row-end: 2;
+   grid-column-end: 3;
+}
+.advantages__item_dagomis--7 {
+   background: url("../images/advantages/7.webp") center no-repeat rgba(0, 0, 0, 0.6);
+   background-size: cover;
+   grid-row-start: 2;
    grid-column-start: 3;
 
    grid-row-end: 1;
@@ -749,6 +922,13 @@ textarea.form__input {
 .product {
    padding-bottom: 90px;
 }
+.clever__box{
+   height: calc(100vh - 75px);
+   background: linear-gradient(190deg, #504f4e -90%, rgba(12, 12, 12, 0.3)), url("../images/objects/clever/1.jpeg ") ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: initial;
+}
 .skysoul__box{
    height: calc(100vh - 75px);
    background: linear-gradient(190deg, #504f4e -90%, rgba(12, 12, 12, 0.3)), url("../images/objects/skysoul/заставка.jpg") ;
@@ -761,8 +941,7 @@ textarea.form__input {
    background: linear-gradient(190deg, #504f4e -90%, rgba(12, 12, 12, 0.3)), url("../images/objects/dagomis/заставка.jpg") ;
    background-repeat: no-repeat;
    background-size: cover;
-   background-attachment: fixed;
-   
+   background-attachment: initial;
 }
 .product__header-text{
    text-align: center;
@@ -851,7 +1030,16 @@ ul.product__info-list {
    background-size: cover;
    color: #fefefe;
    background-repeat: no-repeat;
+   background-image: linear-gradient(600deg, #50504f -355%, rgba(85, 83, 83, 0.3)),url('../images/objects/clever/8.jpeg');
+}
+.skysoul__advantages{
    background-image: linear-gradient(600deg, #50504f -355%, rgba(85, 83, 83, 0.3)),url('../images/objects/skysoul/16.jpg');
+}
+.atlas__advantages{
+   background-image: linear-gradient(600deg, #50504f -355%, rgba(85, 83, 83, 0.3)),url('../images/objects/atlas/12.jpg ');
+}
+.dagomis__advantages{
+   background-image: linear-gradient(600deg, #50504f -355%, rgba(85, 83, 83, 0.3)),url('../images/objects/dagomis/001.jpg');
 }
 .product__advantages-title{
    font-size: 44px;

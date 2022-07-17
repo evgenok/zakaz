@@ -18,126 +18,197 @@
 </head>
 
 <body>
-   <header class="header">
+   <header class="header skysoul__header">
       <div class="container">
-         <nav class="menu">
+         <nav class="menu skysoul__menu">
             <a href="#" class="logo logo__skysoul">
                AK<br>
                <span>clever</span>
             </a>
-            <button class="menu__list-btn">
+            <button class="header__form clever__btn">
+               <p>Оставить заявку </p>
             </button>
-            <ul class="menu__list">
-               <li class="menu__list-item">
-                  <a href="#video" class="menu__list-link">Видео</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="#plan" class="menu__list-link">Планировки</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="#invest" class="menu__list-link">Прогноз</a>
-               </li>
-               <li class="menu__list-item">
-                  <a href="#work" class="menu__list-link">Ход строительства</a>
-               </li>
-            </ul>
-            <button class="menu__btn call__btn">
-               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path
-                     d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z" />
-               </svg>
-            </button>
-            <div class="menu__contacts">
-               <a href="tel:88007003261" class="menu__contacts-tel">8-(800)-700-32-61</a>
-               <a href="mailto:novostroikisochi.ru@yandex.ru"
-                  class="menu__contacts-email">novostroikisochi.ru@yandex.ru</a>
-            </div>
+            <a href="tel:88007003261" class="header__phone">8-(800)-700-32-61</a>
          </nav>
       </div>
    </header>
-   <main class="main">
-      <section class="product">
+   <section class="product ">
+      <div class="product__box clever__box">
+         <p class="product__header-text">
+            Почувствуй комфорт на новом <br>
+            уровне
+         </p>
+      </div>
+      <section class="advantages">
          <div class="container">
-            <div class="product__inner">
-               <div class="product__inner-slider product__slide">
-                  <div class="product__slide-small">
-                     <div class="product__slide-small__item">
-                        <img src="images/objects/clever/1.jpeg" alt="" class="product__slide-small__img">
+            <div class="advantages__inner inner__skysoul">
+               <a href="#gallery" class="advantages__item advantages__item_clever--1">
+                  <p class="advantages__text">Галерея</p>
+               </a>
+               <a href="#advantages" class="advantages__item advantages__item_clever--2">
+                  <p class="advantages__text">Преимущества</p>
+               </a>
+               <a href="#video" class="advantages__item advantages__item_clever--3">
+                  <p class="advantages__text">Наше видео</p>
+               </a>
+               <a href="#invest" class="advantages__item advantages__item_clever--6__clever">
+                  <p class="advantages__text">Инвестиционный<br>план</p>
+               </a>
+               <a href="#plan" class="advantages__item advantages__item_clever--7__clever">
+                  <p class="advantages__text">Планировки</p>
+               </a>
+            </div>
+         </div>
+      </section>
+      <main class="main">
+         <section class="product">
+            <div class="container">
+               <h2 class="product__title">Галерея</h2>
+               <div class="product__inner">
+                  <div class="product__inner-slider product__slide" id="gallery">
+                     <div class="product__slide-small">
+                        <div class="product__slide-small__item">
+                           <img src="images/objects/clever/1.jpeg" alt="" class="product__slide-small__img">
+                        </div>
+                        <div class="product__slide-small__item">
+                           <img src="images/objects/clever/2.jpeg" alt="" class="product__slide-small__img">
+                        </div>
+                        <div class="product__slide-small__item">
+                           <img src="images/objects/clever/3.jpeg" alt="" class="product__slide-small__img">
+                        </div>
+                        <div class="product__slide-small__item">
+                           <img src="images/objects/clever/4.jpg" alt="" class="product__slide-small__img">
+                        </div>
+                        <div class="product__slide-small__item">
+                           <img src="images/objects/clever/5.jpeg" alt="" class="product__slide-small__img">
+                        </div>
+                        <div class="product__slide-small__item">
+                           <img src="images/objects/clever/6.jpeg" alt="" class="product__slide-small__img">
+                        </div>
+                        <div class="product__slide-small__item">
+                           <img src="images/objects/clever/7.jpg" alt="" class="product__slide-small__img">
+                        </div>
+                        <div class="product__slide-small__item">
+                           <img src="images/objects/clever/8.jpeg" alt="" class="product__slide-small__img">
+                        </div>
+                        <div class="product__slide-small__item">
+                           <img src="images/objects/clever/9.jpg" alt="" class="product__slide-small__img">
+                        </div>
                      </div>
-                     <div class="product__slide-small__item">
-                        <img src="images/objects/clever/2.jpeg" alt="" class="product__slide-small__img">
-                     </div>
-                     <div class="product__slide-small__item">
-                        <img src="images/objects/clever/3.jpeg" alt="" class="product__slide-small__img">
-                     </div>
-                     <div class="product__slide-small__item">
-                        <img src="images/objects/clever/4.jpg" alt="" class="product__slide-small__img">
-                     </div>
-                     <div class="product__slide-small__item">
-                        <img src="images/objects/clever/5.jpeg" alt="" class="product__slide-small__img">
-                     </div>
-                     <div class="product__slide-small__item">
-                        <img src="images/objects/clever/6.jpeg" alt="" class="product__slide-small__img">
-                     </div>
-                     <div class="product__slide-small__item">
-                        <img src="images/objects/clever/7.jpg" alt="" class="product__slide-small__img">
-                     </div>
-                     <div class="product__slide-small__item">
-                        <img src="images/objects/clever/8.jpeg" alt="" class="product__slide-small__img">
-                     </div>
-                     <div class="product__slide-small__item">
-                        <img src="images/objects/clever/9.jpg" alt="" class="product__slide-small__img">
+                     <div class="product__slide-big">
+                        <a rel="simplebox" href="images/objects/clever/1.jpeg" class="product__slide-big__item">
+                           <img src="images/objects/clever/1.jpeg" alt="" class="product__slide-big__img">
+                        </a>
+                        <a rel="simplebox" href="images/objects/clever/2.jpeg" class="product__slide-big__item">
+                           <img src="images/objects/clever/2.jpeg" alt="" class="product__slide-big__img">
+                        </a>
+                        <a rel="simplebox" href="images/objects/clever/3.jpeg" class="product__slide-big__item">
+                           <img src="images/objects/clever/3.jpeg" alt="" class="product__slide-big__img">
+                        </a>
+                        <a rel="simplebox" href="images/objects/clever/4.jpg" class="product__slide-big__item">
+                           <img src="images/objects/clever/4.jpg" alt="" class="product__slide-big__img">
+                        </a>
+                        <a rel="simplebox" href="images/objects/clever/5.jpeg" class="product__slide-big__item">
+                           <img src="images/objects/clever/5.jpeg" alt="" class="product__slide-big__img">
+                        </a>
+                        <a rel="simplebox" href="images/objects/clever/6.jpeg" class="product__slide-big__item">
+                           <img src="images/objects/clever/6.jpeg" alt="" class="product__slide-big__img">
+                        </a>
+                        <a rel="simplebox" href="images/objects/clever/7.jpg" class="product__slide-big__item">
+                           <img src="images/objects/clever/7.jpg" alt="" class="product__slide-big__img">
+                        </a>
+                        <a rel="simplebox" href="images/objects/clever/8.jpeg" class="product__slide-big__item">
+                           <img src="images/objects/clever/8.jpeg" alt="" class="product__slide-big__img">
+                        </a>
+                        <a rel="simplebox" href="images/objects/clever/9.jpg" class="product__slide-big__item">
+                           <img src="images/objects/clever/9.jpg" alt="" class="product__slide-big__img">
+                        </a>
+                        clever
                      </div>
                   </div>
-                  <div class="product__slide-big">
-                     <a rel="simplebox" href="images/objects/clever/1.jpeg" class="product__slide-big__item">
-                        <img src="images/objects/clever/1.jpeg" alt="" class="product__slide-big__img">
-                     </a>
-                     <a rel="simplebox" href="images/objects/clever/2.jpeg" class="product__slide-big__item">
-                        <img src="images/objects/clever/2.jpeg" alt="" class="product__slide-big__img">
-                     </a>
-                     <a rel="simplebox" href="images/objects/clever/3.jpeg" class="product__slide-big__item">
-                        <img src="images/objects/clever/3.jpeg" alt="" class="product__slide-big__img">
-                     </a>
-                     <a rel="simplebox" href="images/objects/clever/4.jpg" class="product__slide-big__item">
-                        <img src="images/objects/clever/4.jpg" alt="" class="product__slide-big__img">
-                     </a>
-                     <a rel="simplebox" href="images/objects/clever/5.jpeg" class="product__slide-big__item">
-                        <img src="images/objects/clever/5.jpeg" alt="" class="product__slide-big__img">
-                     </a>
-                     <a rel="simplebox" href="images/objects/clever/6.jpeg" class="product__slide-big__item">
-                        <img src="images/objects/clever/6.jpeg" alt="" class="product__slide-big__img">
-                     </a>
-                     <a rel="simplebox" href="images/objects/clever/7.jpg" class="product__slide-big__item">
-                        <img src="images/objects/clever/7.jpg" alt="" class="product__slide-big__img">
-                     </a>
-                     <a rel="simplebox" href="images/objects/clever/8.jpeg" class="product__slide-big__item">
-                        <img src="images/objects/clever/8.jpeg" alt="" class="product__slide-big__img">
-                     </a>
-                     <a rel="simplebox" href="images/objects/clever/9.jpg" class="product__slide-big__item">
-                        <img src="images/objects/clever/9.jpg" alt="" class="product__slide-big__img">
-                     </a>
-                     clever
+                  <div class="product__info">
+                     <ul class="product__info-list">
+                        <li class="product__info-item">&raquo;Многоквартирный жилой дом</li>
+                        <li class="product__info-item">&raquo;Тротуары из бетонных плиток</li>
+                        <li class="product__info-item">&raquo;Зеленые насаждения</li>
+                        <li class="product__info-item">&raquo;Детская площадка</li>
+                        <li class="product__info-item">&raquo;Баня с мангалом</li>
+                        <li class="product__info-item">&raquo;Зона отдыха</li>
+                        <li class="product__info-item">&raquo;Бассейн</li>
+                        <li class="product__info-item">&raquo;Парковка</li>
+                        <li class="product__info-item">Адрес: г.Сочи, Хостинский район, ул.Чекменёва, д.18</li>
+                     </ul>
+                     <button class="header__form product__form clever__btn">
+                        <p>Оставить заявку </p>
+                     </button>
+
                   </div>
-               </div>
-               <div class="product__info">
-                  <ul class="product__info-list">
-                     <li class="product__info-item">&raquo;Многоквартирный жилой дом</li>
-                     <li class="product__info-item">&raquo;Тротуары из бетонных плиток</li>
-                     <li class="product__info-item">&raquo;Зеленые насаждения</li>
-                     <li class="product__info-item">&raquo;Детская площадка</li>
-                     <li class="product__info-item">&raquo;Баня с мангалом</li>
-                     <li class="product__info-item">&raquo;Зона отдыха</li>
-                     <li class="product__info-item">&raquo;Бассейн</li>
-                     <li class="product__info-item">&raquo;Парковка</li>
-                     <li class="product__info-item">Адрес: г.Сочи, Хостинский район, ул.Чекменёва, д.18</li>
-                  </ul>
-                  <button class="footer__social-btn">Оставить заявку</button>
 
                </div>
             </div>
-            <div class="video__title title">Посмотрите обзорное видео</div>
-         </div>
+            <div class="product__advantages ">
+               <div class="container">
+                  <h2 class="product__advantages-title" id="advantages">
+                     Преимущества
+                  </h2>
+                  <h4 class="product__advantages-suptitle">
+                     В чудесном зеленом районе солнечного Сочи – Мацесте – предлагаются к реализации отличные
+                     апартаменты в современном комплексе Clever, В КОТОРОМ ПРЕДУСМОТРЕНО:
+                  </h4>
+                  <div class="product__advantages-items">
+                     <div class="product__advantages-col-1">
+                        <div class="col-item item-1 left-1">
+                           <img class="col-item-img"
+                              src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_1.png" alt="">
+                           <p>Комфортная инфраструктура</p>
+                        </div>
+                        <div class="col-item item-1 item-right">
+                           <img class="col-item-img"
+                              src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_2.png" alt="">
+                           <p>Парки, прогулочные зоны и скверы</p>
+                        </div>
+                        <div class="col-item item-3">
+                           <img class="col-item-img"
+                              src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_3.png" alt="">
+                           <p>Все магазины под рукой</p>
+                        </div>
+                     </div>
+                     <div class="product__advantages-col-2">
+                        <div class="col-item item-2">
+                           <img class="col-item-img"
+                              src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_4.png" alt="">
+                           <p>Приватная охраняемая территория
+                              Безопасность 360/24</p>
+                        </div>
+                        <div class="col-item item-2 item-right">
+                           <img class="col-item-img"
+                              src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_5.png" alt="">
+                           <p> Отличный сервис</p>
+                        </div>
+                        <div class="col-item item-4">
+                           <img class="col-item-img"
+                              src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_6.png" alt="">
+                           <p>Собственная Управляющая Компания</p>
+                        </div>
+                     </div>
+                     <div class="product__advantages-col-3">
+                        <div class="col-item item-3">
+                           <img class="col-item-img"
+                              src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_3.png" alt="">
+                           <p>Торговый центр и зона бутиков</p>
+                        </div>
+                        <div class="col-item item-4">
+                           <img class="col-item-img"
+                              src="https://skysoul.ru/media/cache/resolve/template/img/ic_plus_6.png" alt="">
+                           <p>Собственная Управляющая Компания</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="video__title title">Посмотрите обзорное видео</div>
+
          <div class="product__video" id="video">
             <div class="video__box">
                <a data-fancybox href="https://www.youtube.com/watch?v=cKi5KC1Vg08" class="play__btn">
@@ -148,7 +219,7 @@
          <div class="container">
             <div class="plan__title title">Посмотрите планировки. Внутреннее пространство разработано с учетом всех
                современных тенденций в дизайне.</div>
-            <div class="plan" id="plan">
+            <div class="plan plan__clever" id="plan">
                <div class="plan__slider">
                   <a rel="simplebox" href="images/objects/clever/plan/1.jpeg" class="plan__slide">
                      <img src="images/objects/clever/plan/1.jpeg" alt="">
@@ -242,7 +313,7 @@
                </div>
             </div>
          </div>
-      </section>
+   </section>
    </main>
 
    <footer class="footer">
@@ -276,7 +347,9 @@
                      <img src="images/icons/inst.svg" alt="" class="footer__social-img">
                   </a>
                </div>
-               <button class="footer__social-btn">Оставить заявку</button>
+               <button class="header__form product__form clever__btn">
+                  <p>Оставить заявку </p>
+               </button>
             </div>
          </div>
       </div>

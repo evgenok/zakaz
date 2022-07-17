@@ -130,14 +130,20 @@
     .inner__skysoul{
       height: 940px;
     }
-    .advantages__item--7__skysoul{
+    .advantages__item--7__skysoul,
+    .advantages__item_clever--7__clever,
+    .advantages__item_atlas--7,
+    .advantages__item_dagomis--7{
       grid-row-start: 3;
       grid-column-start: 1;
 
       grid-row-end: 3;
       grid-column-end: 1;
     }
-    .advantages__item--6__skysoul{
+    .advantages__item--6__skysoul,
+    .advantages__item_clever--6__clever,
+    .advantages__item_atlas--6,
+    .advantages__item_dagomis--6{
       grid-row-start: 3;
       grid-column-start: 3;
 
@@ -176,9 +182,6 @@
    .objects__info {
       width: 100%;
    }
-   .slick-list{
-      height: 100% !important;
-   }
    .product__slide-small {
       display: none;
    }
@@ -196,7 +199,22 @@
      .advantages__item--2:hover ,
      .advantages__item--3:hover ,
      .advantages__item--6__skysoul:hover ,
-     .advantages__item--7__skysoul:hover {
+     .advantages__item--7__skysoul:hover,
+     .advantages__item_atlas--1:hover,
+     .advantages__item_atlas--2:hover,
+     .advantages__item_atlas--3:hover,
+     .advantages__item_atlas--6:hover,
+     .advantages__item_atlas--7:hover,
+     .advantages__item_clever--1:hover,
+     .advantages__item_clever--2:hover,
+     .advantages__item_clever--3:hover,
+     .advantages__item_clever--6__clever:hover,
+     .advantages__item_clever--7__clever:hover,
+     .advantages__item_dagomis--1:hover,
+     .advantages__item_dagomis--2:hover,
+     .advantages__item_dagomis--3:hover,
+     .advantages__item_dagomis--6:hover,
+     .advantages__item_dagomis--7:hover{
       transform: scale(0.9);
       transition: all 0.5s linear;
    }
@@ -204,6 +222,15 @@
       width: 100%;
       height: 100%;
    }
+   .plan__dagomis .plan__slide img {
+      max-height: 256px !important;
+      width: 485px !important;
+      min-height: 324px;
+      margin: 93px 293px;
+      }
+      .plan__dagomis{
+         padding: 15px;
+      }
 }
 @media (max-width: 800px){
     .advantages__title{
@@ -262,6 +289,25 @@
       font-size: 14px;
       line-height: 27px;
    }
+   .plan__atlas{
+      .plan__slide img {
+         max-height: 275px !important;
+         width: 439px !important;
+      }
+      .plan__slider{
+         height: 300px;
+      }
+   }
+   .plan__clever{
+      .plan__slide img {
+         max-height: 275px !important;
+         width: 439px !important;
+      }
+      .plan__slider{
+         height: 300px;
+      }
+   }
+   
 }
 @media (max-width: 640px){
  .advantages__title{
@@ -299,6 +345,29 @@
   .product__advantages{
    height: 180vh;
   }
+  .plan__skysoul .plan__slide img {
+   max-height: 358px !important;
+    width: 360px !important;
+    min-height: 160px;
+  }
+  .plan__skysoul .plan__slide {
+   margin: 54px 219px;
+   }
+   .product .plan__skysoul .plan-img-3 {
+      max-height: 221px !important;
+      margin: 120px 9px;
+      width: 360px !important;
+   }
+   .product .plan__skysoul .plan-img-1 {
+      margin: 54px 253px;
+      width: 150px !important;
+      max-height: 358px !important;
+  }
+  .product .plan__skysoul .plan-img-2 {
+   margin: 54px 180px;
+   width: 293px !important;
+   max-height: 358px !important;
+}
 }
 @media (max-width: 550px){
     .advantages__inner{
@@ -324,6 +393,9 @@
     .header__phone{
       margin-top: 15px;
       font-size: 14px;
+      position: absolute;
+      left: 0;
+      padding-left: 5px;
    }
    .skysoul__menu{
       display: block;
@@ -342,9 +414,18 @@
    .product__form{
       position: relative;
    }
-   .plan__slide img{
-      min-height: 357px;
+   .plan__atlas .plan__slide img{
+      min-height: 305px;
    }
+   .plan__dagomis .plan__slide img {
+      max-height: 232px !important;
+    width: 412px !important;
+    min-height: 306px;
+    margin: 93px 331px;
+      }
+      .product__slide, .product__slide-big {
+         height: 400px;
+     }
 }
 @media (max-width: 510px){
     .advantages__title{
@@ -357,7 +438,7 @@
         font-size: 13px;
         width: 180px;
      }
-     .logo{
+     .logo {
         font-size: 13px;
         width: 120px;
      }
@@ -372,10 +453,10 @@
         font-size: 27px;
      }
      .plan .slick-next{
-      right: -39px;
+      right: -27px;
      }
      .plan .slick-prev{
-      left: -39px;
+      left: -27px;
      }
      .skysoul__header{
       height: 130px;
@@ -422,6 +503,67 @@
    .plan__slide img{
       min-height: 367px;
    }
+   .plan__atlas .plan__slide{
+      margin: -11px 348px;
+   }
+   .plan__atlas .plan__slide img {
+      max-height: 247px !important;
+      width: 381px !important;
+  }
+  .plan__atlas .plan__slide img {
+   min-height: 254px;
+   }
+   .plan__atlas{
+      padding: 30px;
+   }
+   .logo__atlas {
+      letter-spacing: 4px;
+      font-size: 21px;
+      font-family: "Quicksand",sans-serif;
+      font-weight: 500;}
+
+   .plan__skysoul .plan__slide img {
+         max-height: 250px !important;
+          width: 250px !important;
+          min-height: 160px;
+      }
+      .plan__skysoul .plan__slide {
+         margin: 108px 225px;
+       }
+      .product .plan__skysoul .plan-img-3 {
+         max-height: 190px !important;
+         margin: 96px 37px !important;
+         width: 307px !important;
+      }
+      .product .plan__skysoul .plan-img-1 {
+            margin: -16px 253px !important;
+            width: 150px !important;
+            max-height: 358px !important;
+      }
+        .product .plan__skysoul .plan-img-2 {
+         margin: -5px 180px !important;
+         width: 293px !important;
+         max-height: 358px !important;
+      }
+      .plan__clever .plan__slide {
+         min-width: 31%;
+         margin: 49px 326px;
+     }
+     .plan__clever .plan__slide img {
+      max-height: 222px !important;
+    width: 355px !important;
+    min-height: 226px;
+    margin: 0px 355px;
+      }
+      .plan__clever{
+         padding: 20px;
+      }
+      .plan__dagomis .plan__slide img {
+         max-height: 219px !important;
+         width: 353px !important;
+         min-height: 242px;
+         margin: 100px 362px;
+         }
 }
 @media (max-width: 420px){
     .advantages__title{
@@ -462,6 +604,42 @@
      .product__advantages-title{
       font-size: 32px;
    }
+   .plan__atlas .plan__slide {
+      margin: -11px 389px;
+  }
+  .plan__atlas .plan__slide img {
+   max-height: 247px !important;
+   width: 298px !important;
+   }
+   .plan__atlas .plan__slide img {
+   max-height: 221px !important;
+   width: 305px !important;
+   }
+   .plan__atlas .plan__slide img {
+   min-height: 214px;
+   }
+   .plan__atlas .plan__slide {
+   margin: -11px 395px;
+   }
+   .plan__atlas .slick-list {
+      padding: 14px 50px !important;
+   }
+   .logo__atlas {
+      letter-spacing: 4px;
+      font-size: 21px;
+      font-family: "Quicksand",sans-serif;
+      font-weight: 500;
+   }
+   .plan__dagomis .plan__slide img {
+      max-height: 195px !important;
+    width: 297px !important;
+    min-height: 198px;
+    margin: 101px 392px;
+      }
+      .product__slide, .product__slide-big {
+         height: 310px;
+     }
+
 }
 @media (max-width: 370px){
     .advantages__title{
@@ -481,6 +659,12 @@
     .logo__skysoul{
       width: 90%;
    }
+   .logo__atlas {
+      letter-spacing: 4px;
+      font-size: 21px;
+      font-family: "Quicksand",sans-serif;
+      font-weight: 500;
+   }
 }
 @media (max-width: 370px){
      .menu__contacts{
@@ -497,4 +681,57 @@
    .footer__form{
          font-size: 12px;
    }
-}
+   .plan__atlas .plan__slide img {
+      max-height: 208px !important;
+      width: 245px !important;
+   }
+  .plan__atlas .plan__slide {
+   margin: -11px 430px;
+   }
+   .logo__atlas {
+      letter-spacing: 4px;
+      font-size: 21px;
+      font-family: "Quicksand",sans-serif;
+      font-weight: 500;
+   }
+   .plan__atlas .plan__slide img{
+   max-height: 170px !important;
+   width: 245px !important;
+   min-height: 175px;
+   }
+   .plan__skysoul .plan__slide img {
+      max-height: 193px !important;
+      width: 193px !important;
+      min-height: 145px;   
+   }
+   .plan__skysoul .plan__slide {
+      margin: 150px 228px;
+    }
+   .product .plan__skysoul .plan-img-3 {
+      max-height: 112px !important;
+      margin: 42px 80px !important;
+      width: 229px !important;
+   }
+   .product .plan__skysoul .plan-img-1 {
+         margin: -16px 253px !important;
+         width: 150px !important;
+         max-height: 358px !important;
+   }
+     .product .plan__skysoul .plan-img-2 {
+      margin: -5px 180px !important;
+      width: 293px !important;
+      max-height: 358px !important;
+   }
+   .plan__clever .plan__slide img {
+      max-height: 202px !important;
+    width: 293px !important;
+    min-height: 206px;
+    margin: 0px 384px;
+      }
+      .plan__dagomis .plan__slide img {
+         max-height: 171px !important;
+         width: 250px !important;
+         min-height: 173px;
+         margin: 101px 414px;
+         }
+}    
