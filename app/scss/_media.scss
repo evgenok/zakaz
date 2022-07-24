@@ -1,0 +1,737 @@
+//Общее
+@media (max-width: 1075px){
+    .menu__list,
+    .menu__btn{
+        display: none;
+    }
+    .header{
+      height: 75px;
+    }
+    .menu{
+        order: 1;
+        align-items: center;
+    }
+    .menu__list{
+        display: block;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        background-color: $bg; 
+        right: 0;
+        padding: 20px 0;
+        transform: translateY(-500px);
+        transition: all .7s;
+        z-index: 2 ;
+        align-items: center;
+        text-align: center;
+    }
+    .menu__list.menu__list--active {
+        transform: translateY(0px);  
+    }
+    .menu__list-link{
+        padding: 20px 0;
+        display: block;
+        text-align: center;
+    }
+    .menu__list-btn{
+        display: block;
+        width: 35px;
+        cursor: pointer;
+        height: 24px;
+        border: none;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        background-color: transparent;
+        position: relative;
+    }
+    .menu__list-btn::before{
+    content: '';
+     position: absolute;
+     width: 35px;
+     height: 2px;
+     top: 9px;
+     left: 0px;
+     background-color: #000;
+    }
+    .menu__item + .menu__item {
+        margin-left: 0px;
+     }
+     .catalog__content-text{
+         font-size: 16px;
+     }
+     .service__text-link:hover{
+         list-style: none;   
+     }
+     .service__item+.service__item{
+         margin-left: 0;
+     }
+     .service__items-top,
+     .service__items-bottom{
+         flex-wrap: wrap;
+     }
+     .header__content__title{
+         margin-top: 10px;
+     }
+     .menu__contact{
+        font-size: 14px;
+     }
+     .footer__inner{
+        flex-wrap: wrap;
+     }
+     .footer__box{
+        flex-wrap: wrap;
+     }
+     .about__bg-4,
+     .about__bg-3,
+     .about__bg-2,
+     .about__bg-1{
+        max-width: 50%;
+     }
+     .about__item-title{
+        font-size: 122px;
+     }
+     .form {
+        margin-right: 15px; 
+     }
+     .skysoul__box,
+     .atlas__box{
+      background-attachment: local;
+     }
+     .product__inner{
+      flex-wrap: wrap;
+     }
+     .product__info{
+      margin: 0 auto;
+     }
+     .video__title {
+      font-size: 42px;
+     }
+     
+}
+@media (max-width: 970px){
+    .contacts__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 900px){
+    .about__bg-4,
+    .about__bg-3,
+    .about__bg-2,
+    .about__bg-1{
+       max-width: 40%;
+    }
+    .product__inner-sliderХ{
+      order: 1;
+    }
+    .inner__skysoul{
+      height: 940px;
+    }
+    .advantages__item--7__skysoul,
+    .advantages__item_clever--7__clever,
+    .advantages__item_atlas--7,
+    .advantages__item_dagomis--7{
+      grid-row-start: 3;
+      grid-column-start: 1;
+
+      grid-row-end: 3;
+      grid-column-end: 1;
+    }
+    .advantages__item--6__skysoul,
+    .advantages__item_clever--6__clever,
+    .advantages__item_atlas--6,
+    .advantages__item_dagomis--6{
+      grid-row-start: 3;
+      grid-column-start: 3;
+
+      grid-row-end: 3;
+      grid-column-end: 2;
+    }
+    .item-1,
+    .item-2,
+    .item-3{
+      padding-top: 80px;
+    }
+    .col-item{
+      font-size: 18px;
+    }
+    .product__advantages-suptitle{
+      width: 90%;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .menu__list-item + .menu__list-item {
+       margin-left: 0px;
+    }
+    .menu__list-item+.menu__list-item {
+      margin-left: 0px;
+     }
+}
+@media (max-width: 845px){
+   .objects__item{
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+   }
+   .objects__slider{
+      width: 100%;
+   }
+   .objects__info {
+      width: 100%;
+   }
+   .product__slide-small {
+      display: none;
+   }
+   .product__slide,
+   .product__slide-big{
+      width: 100%;
+   }
+   .header__phone{
+      font-size: 16px;
+   }
+   .header__form{
+      padding: 0 20px;
+     }
+     .advantages__item--1:hover ,
+     .advantages__item--2:hover ,
+     .advantages__item--3:hover ,
+     .advantages__item--6__skysoul:hover ,
+     .advantages__item--7__skysoul:hover,
+     .advantages__item_atlas--1:hover,
+     .advantages__item_atlas--2:hover,
+     .advantages__item_atlas--3:hover,
+     .advantages__item_atlas--6:hover,
+     .advantages__item_atlas--7:hover,
+     .advantages__item_clever--1:hover,
+     .advantages__item_clever--2:hover,
+     .advantages__item_clever--3:hover,
+     .advantages__item_clever--6__clever:hover,
+     .advantages__item_clever--7__clever:hover,
+     .advantages__item_dagomis--1:hover,
+     .advantages__item_dagomis--2:hover,
+     .advantages__item_dagomis--3:hover,
+     .advantages__item_dagomis--6:hover,
+     .advantages__item_dagomis--7:hover{
+      transform: scale(0.9);
+      transition: all 0.5s linear;
+   }
+   .product__slide-big img{
+      width: 100%;
+      height: 100%;
+   }
+   .plan__dagomis .plan__slide img {
+      max-height: 256px !important;
+      width: 485px !important;
+      min-height: 324px;
+      margin: 93px 293px;
+      }
+      .plan__dagomis{
+         padding: 15px;
+      }
+}
+@media (max-width: 800px){
+    .advantages__title{
+        font-size: 56px;
+     }
+     .footer__item {
+        border-left: 1px solid #166966;
+        padding-left: 30px;
+        margin-bottom: 20px;
+     }
+     .about__content-text{
+        font-size: 17px;
+     }
+     .about__item-title{
+        font-size: 98px;
+     }
+     .about__item-text{
+        font-size: 35px;
+        line-height: 40px;
+     }
+     .about__item{
+        flex-wrap: wrap;
+     }
+     .about__bg-4,
+    .about__bg-3,
+    .about__bg-2,
+    .about__bg-1{
+       max-width: 100%;
+    }
+    .invest__inner{
+      flex-wrap: wrap;
+    }
+    .invest__item{
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    ul.invest__item-list__right{
+      margin-bottom: 30px;
+    }
+    .contacts__inner.contacts__map{
+      width: 100% !important;
+      height: 100% !important ;
+    }
+     .col-item{
+      font-size: 15px;
+     }
+}
+@media (max-width: 750px){
+   .item-1,
+   .item-2,
+   .item-3,
+   .item-4{
+     padding-top: 60px;
+   }
+   .product__advantages-suptitle{
+      font-size: 14px;
+      line-height: 27px;
+   }
+   .plan__atlas{
+      .plan__slide img {
+         max-height: 275px !important;
+         width: 439px !important;
+      }
+      .plan__slider{
+         height: 300px;
+      }
+   }
+   .plan__clever{
+      .plan__slide img {
+         max-height: 275px !important;
+         width: 439px !important;
+      }
+      .plan__slider{
+         height: 300px;
+      }
+   }
+   
+}
+@media (max-width: 640px){
+ .advantages__title{
+    font-size: 46px;
+ }
+ .about__content-text{
+    font-size: 16px;
+ }
+ .about__item-title{
+    font-size: 82px;
+    margin: 40px 0;
+ }
+ .about__item-text{
+    font-size: 30px;
+ }
+ .video__title {
+   font-size: 36px;
+   line-height: 34px;
+  }
+  .inner__skysoul{
+   display: flex;
+   flex-direction: column;
+   height: 1600px;
+  }
+  .header__phone{
+   font-size: 14px;
+}
+.header__form{
+   padding: 0 15px;
+   font-size: 12px;
+  }
+  .logo__skysoul {
+   width: 225px;
+  }
+  .product__advantages{
+   height: 180vh;
+  }
+  .plan__skysoul .plan__slide img {
+   max-height: 358px !important;
+    width: 360px !important;
+    min-height: 160px;
+  }
+  .plan__skysoul .plan__slide {
+   margin: 54px 219px;
+   }
+   .product .plan__skysoul .plan-img-3 {
+      max-height: 221px !important;
+      margin: 120px 9px;
+      width: 360px !important;
+   }
+   .product .plan__skysoul .plan-img-1 {
+      margin: 54px 253px;
+      width: 150px !important;
+      max-height: 358px !important;
+  }
+  .product .plan__skysoul .plan-img-2 {
+   margin: 54px 180px;
+   width: 293px !important;
+   max-height: 358px !important;
+}
+}
+@media (max-width: 550px){
+    .advantages__inner{
+        display: flex;
+        flex-direction: column;
+    }
+    textarea.form__input{
+        height: 130px;
+    }
+    .advantages__item:hover {
+        transform: scale(0.9);
+        transition: all 0.5s linear;
+     }
+     .about__item-title{
+        font-size: 75px;
+     }
+     .about__item-text{
+        font-size: 26px;
+     }
+     .plan .slick-dots{
+      bottom: -80px;     
+    }
+    .header__phone{
+      margin-top: 15px;
+      font-size: 14px;
+      position: absolute;
+      left: 0;
+      padding-left: 5px;
+   }
+   .skysoul__menu{
+      display: block;
+   }
+   .skysoul__header{
+      height: 130px;
+   }
+   .logo__skysoul{
+      display: block;
+      margin-bottom: 10px;
+   }
+   .header__form{
+      position: absolute;
+      right: 0;
+   }
+   .product__form{
+      position: relative;
+   }
+   .plan__atlas .plan__slide img{
+      min-height: 305px;
+   }
+   .plan__dagomis .plan__slide img {
+      max-height: 232px !important;
+    width: 412px !important;
+    min-height: 306px;
+    margin: 93px 331px;
+      }
+      .product__slide, .product__slide-big {
+         height: 400px;
+     }
+}
+@media (max-width: 510px){
+    .advantages__title{
+        font-size: 36px;
+     }
+     .header{
+        height: 80px;
+     }
+     .menu__contacts{
+        font-size: 13px;
+        width: 180px;
+     }
+     .logo {
+        font-size: 13px;
+        width: 120px;
+     }
+    .advantages__text {
+        text-align: center;
+        line-height: 23px;
+    }
+    .about__item-title{
+        font-size: 65px;
+     }
+     .about__item-text{
+        font-size: 27px;
+     }
+     .plan .slick-next{
+      right: -27px;
+     }
+     .plan .slick-prev{
+      left: -27px;
+     }
+     .skysoul__header{
+      height: 130px;
+   }
+   .logo__skysoul{
+      width: 80%;
+   }
+   .item-3,
+   .item-4{
+      display: none;
+   }
+   .item-right{
+      border-right: none;
+   }
+   .product__advantages-col-3{
+      display: flex;
+      justify-content: space-around;
+      .item-3,
+      .item-4{
+      display: block;
+   }
+   }
+   .product__advantages-title{
+      font-size: 36px;
+   }
+   .product__advantages-suptitle{
+      font-size: 14px;
+   }
+   .product__advantages-col-1,
+   .product__advantages-col-2{
+      justify-content: space-around;
+   }
+   .col-item{
+      border-right: none;
+      border-bottom: 1px solid #fefefe;
+   }
+   .col-item-img{
+      max-width: 50%;
+   }
+   .plan__slide{
+      min-width: 31%;
+      margin: 49px 318px;
+   }
+   .plan__slide img{
+      min-height: 367px;
+   }
+   .plan__atlas .plan__slide{
+      margin: -11px 348px;
+   }
+   .plan__atlas .plan__slide img {
+      max-height: 247px !important;
+      width: 381px !important;
+  }
+  .plan__atlas .plan__slide img {
+   min-height: 254px;
+   }
+   .plan__atlas{
+      padding: 30px;
+   }
+   .logo__atlas {
+      letter-spacing: 4px;
+      font-size: 21px;
+      font-family: "Quicksand",sans-serif;
+      font-weight: 500;}
+
+   .plan__skysoul .plan__slide img {
+         max-height: 250px !important;
+          width: 250px !important;
+          min-height: 160px;
+      }
+      .plan__skysoul .plan__slide {
+         margin: 108px 225px;
+       }
+      .product .plan__skysoul .plan-img-3 {
+         max-height: 190px !important;
+         margin: 96px 37px !important;
+         width: 307px !important;
+      }
+      .product .plan__skysoul .plan-img-1 {
+            margin: -16px 253px !important;
+            width: 150px !important;
+            max-height: 358px !important;
+      }
+        .product .plan__skysoul .plan-img-2 {
+         margin: -5px 180px !important;
+         width: 293px !important;
+         max-height: 358px !important;
+      }
+      .plan__clever .plan__slide {
+         min-width: 31%;
+         margin: 49px 326px;
+     }
+     .plan__clever .plan__slide img {
+      max-height: 222px !important;
+    width: 355px !important;
+    min-height: 226px;
+    margin: 0px 355px;
+      }
+      .plan__clever{
+         padding: 20px;
+      }
+      .plan__dagomis .plan__slide img {
+         max-height: 219px !important;
+         width: 353px !important;
+         min-height: 242px;
+         margin: 100px 362px;
+         }
+}
+@media (max-width: 420px){
+    .advantages__title{
+        font-size: 32px;
+     }
+     .menu__contacts{
+        font-size: 11px;
+        width: 153px;
+     }
+     .logo{
+        font-size: 11px;
+        width: 95px;
+     }
+     textarea.form__input{
+        height: 100px;
+    }
+    .about__title{
+        font-size: 40px;
+    }
+    .about__item-title{
+        font-size: 45px;
+     }
+     .about__item-text{
+        font-size: 23px;
+     }
+     .contacts__title{
+        font-size: 60px;
+     }
+     .invest__item-title{
+      font-size: 32px;
+     }
+     .logo__skysoul{
+      width: 90%;
+   }
+     .left-1{
+      font-size: 13px;
+     }
+     .product__advantages-title{
+      font-size: 32px;
+   }
+   .plan__atlas .plan__slide {
+      margin: -11px 389px;
+  }
+  .plan__atlas .plan__slide img {
+   max-height: 247px !important;
+   width: 298px !important;
+   }
+   .plan__atlas .plan__slide img {
+   max-height: 221px !important;
+   width: 305px !important;
+   }
+   .plan__atlas .plan__slide img {
+   min-height: 214px;
+   }
+   .plan__atlas .plan__slide {
+   margin: -11px 395px;
+   }
+   .plan__atlas .slick-list {
+      padding: 14px 50px !important;
+   }
+   .logo__atlas {
+      letter-spacing: 4px;
+      font-size: 21px;
+      font-family: "Quicksand",sans-serif;
+      font-weight: 500;
+   }
+   .plan__dagomis .plan__slide img {
+      max-height: 195px !important;
+    width: 297px !important;
+    min-height: 198px;
+    margin: 101px 392px;
+      }
+      .product__slide, .product__slide-big {
+         height: 310px;
+     }
+
+}
+@media (max-width: 370px){
+    .advantages__title{
+        font-size: 26px;
+     }
+     .menu__contacts{
+        font-size: 10px;
+        width: 138px;
+     }
+     .logo{
+        font-size: 10px;
+        width: 87px;
+     }
+     textarea.form__input{
+        height: 47px;
+    }
+    .logo__skysoul{
+      width: 90%;
+   }
+   .logo__atlas {
+      letter-spacing: 4px;
+      font-size: 21px;
+      font-family: "Quicksand",sans-serif;
+      font-weight: 500;
+   }
+}
+@media (max-width: 370px){
+     .menu__contacts{
+        font-size: 9px;
+        width: 122px;
+     }
+     .logo{
+        font-size: 9px;
+        width: 82px;
+     }
+     .logo__skysoul{
+      width: 90%;
+   }
+   .footer__form{
+         font-size: 12px;
+   }
+   .plan__atlas .plan__slide img {
+      max-height: 208px !important;
+      width: 245px !important;
+   }
+  .plan__atlas .plan__slide {
+   margin: -11px 430px;
+   }
+   .logo__atlas {
+      letter-spacing: 4px;
+      font-size: 21px;
+      font-family: "Quicksand",sans-serif;
+      font-weight: 500;
+   }
+   .plan__atlas .plan__slide img{
+   max-height: 170px !important;
+   width: 245px !important;
+   min-height: 175px;
+   }
+   .plan__skysoul .plan__slide img {
+      max-height: 193px !important;
+      width: 193px !important;
+      min-height: 145px;   
+   }
+   .plan__skysoul .plan__slide {
+      margin: 150px 228px;
+    }
+   .product .plan__skysoul .plan-img-3 {
+      max-height: 112px !important;
+      margin: 42px 80px !important;
+      width: 229px !important;
+   }
+   .product .plan__skysoul .plan-img-1 {
+         margin: -16px 253px !important;
+         width: 150px !important;
+         max-height: 358px !important;
+   }
+     .product .plan__skysoul .plan-img-2 {
+      margin: -5px 180px !important;
+      width: 293px !important;
+      max-height: 358px !important;
+   }
+   .plan__clever .plan__slide img {
+      max-height: 202px !important;
+    width: 293px !important;
+    min-height: 206px;
+    margin: 0px 384px;
+      }
+      .plan__dagomis .plan__slide img {
+         max-height: 171px !important;
+         width: 250px !important;
+         min-height: 173px;
+         margin: 101px 414px;
+         }
+}    
