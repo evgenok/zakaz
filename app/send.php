@@ -11,11 +11,11 @@ $text = $_POST['text'];
 $file = $_FILES['myfile'];
 
 // Формирование самого письма
-$title = "Заголовок письма";
+$title = "Новая заявка от center-newbuildings";
 $body = "
-<h2>Новое письмо</h2>
+<h2>Данные отправителя для обратной связи</h2>
 <b>Имя:</b> $name<br>
-<b>Почта:</b> $email<br><br>
+<b>Телефон:</b> $email<br><br>
 <b>Сообщение:</b><br>$text
 ";
 
@@ -25,7 +25,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -34,10 +34,10 @@ try {
     $mail->Password   = 'pzcoxddyripztqdr'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('ytkurs@yandex.ru', 'ytkurs'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('ytkurs@yandex.ru', 'center-newbuildings'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('kursfor@yandex.ru');  
+    $mail->addAddress('novostroikisochi.ru@yandex.ru');  
 
     // Прикрипление файлов к письму
 if (!empty($file['name'][0])) {

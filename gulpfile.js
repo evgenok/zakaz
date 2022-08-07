@@ -7,7 +7,6 @@ const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
-// const nunjucksRender = require('gulp-nunjucks-render');
 const del = require('del');
 
 function browsersync() {
@@ -18,20 +17,16 @@ function browsersync() {
    });
 }
 
-
-// function nunjacks() {
-//    return src('app/*.njk')
-//       .pipe(nunjucksRender())
-//       .pipe(dest('app'))
-//       .pipe(browserSync.stream())
-// }
-
 function cleanDist() {
    return del('dist')
 }
 
 function images() {
-   return src('app/images/*/*')
+   return src(['app/images/*/*',
+      'app/images/*/*/*',
+      'app/images/*/*/*/*',
+      'app/images/*/*/*/*/*'
+])
       .pipe(imagemin(
          [
             imagemin.gifsicle({ interlaced: true }),
@@ -80,8 +75,11 @@ function styles() {
 function build() {
    return src([
       'app/css/style.min.css',
+      'app/css/slick.css',
+      'app/css/slick-theme.css',
       'app/fonts/**/*',
       'app/js/main.min.js',
+      'app/js/slick.js',
       'app/*.html',
       'app/*.php'
    ], { base: 'app' })
@@ -90,7 +88,6 @@ function build() {
 
 function watching() {
    watch(['app/scss/**/*.scss'], styles);
-   // watch(['app/*.njk'], nunjacks);
    watch(['app/js/main.js', '!app/js/main.min.js'], scripts);
    watch(['app/*.html']).on('change', browserSync.reload);
 }
@@ -101,11 +98,9 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 exports.rename = rename;
-// exports.nunjacks = nunjacks;
 exports.cleanDist = cleanDist;
 
 
 
 exports.build = series(cleanDist, images, build);
-// nunjacks,
 exports.default = parallel( styles, scripts, browsersync, watching);
